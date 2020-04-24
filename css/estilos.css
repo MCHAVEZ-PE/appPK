@@ -1,0 +1,168 @@
+body .mensaje {
+    background-color: skyblue;
+    opacity: 0.5;
+}
+.navbar{
+    background-color: red !important;
+    box-shadow: 3px 4px 10px 3px rgba(242,203,242,1);
+    height: 80px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+.main-header{
+    margin-top: 80px;
+    background-image: url(../resources/img.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+
+}
+.main-header .background-overlay .container {
+    padding-top: 20px;
+}
+.main-header .background-overlay .container 
+.row .col-md-6 .boxTipoCambio{
+    margin: 10px 0px;  
+    width: 100%;
+    display: flex;
+
+    justify-content: start;
+    /* background-color:red; */
+}
+span.textTipoCambio{
+    /* background-color: red !important; */
+    padding: 10px 10px;
+ 
+    width: 200px;
+    background-color: white;
+    font-size: 24px;
+}
+span.dataTipoCambio{
+    width: calc(100% - 200px);
+    padding: 10px 10px;
+    color:white;
+    background-color: red;
+    font-size: 24px;
+}
+
+label.TextSoles{
+    margin: 10px;
+ 
+    /* background-color: teal; */
+}
+div.boxSoles{
+    background-color: teal;
+}
+.formchangecoin{
+    position: relative;
+}
+.formchangecoin .form-group ,
+ .formchangecoin .form-group label{
+    display: flex;
+    margin-bottom: 0px;  
+}
+.formchangecoin .form-group label{
+    justify-content: center;
+    align-items: center;
+}
+.formchangecoin .form-group .form-control{
+    /* width: calc(100%-200px); */
+    height: 75px;
+}
+
+.formchangecoin .form-group label{
+    /* background-color: red; */
+    width :400px;
+}
+.formchangecoin .form-group .labelSoles{
+    background-color: cadetblue;
+}
+.formchangecoin .btn-change{
+    position: absolute;
+    top: 60px;
+    left: 80px; 
+    border-radius: 25px;
+    background-color: red;
+    border: red solid;
+    color: #ffffff;
+
+}
+.formchangecoin .form-group .labelDolares{
+    background-color: cyan;
+}
+.formchangecoin .form-group button{
+    width: 100%;
+    margin: 10px 0px;
+    height: 50px;
+}
+.container .sectionInfo{
+    margin: 40px 0px;
+    display: flex;    
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.container .sectionInfo div p{
+    display: flex;
+    justify-content: center;
+}
+.p-informativo{
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.b-trayectory{
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px red;
+}
+.initOperation{
+    /* position: absolute;
+    bottom: 50px;
+    right: 3; */
+    height: 50px;
+    background-color: #fa0101;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.initOperation:hover{
+    background-color: #fc4a53;
+    color: #ffffff;
+}
+.input-subscription{
+    height: 50px;
+    width: 400px;
+    border-right: 0;
+    border-radius:20px 0px 0px 20px;
+    -webkit-box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+}
+.btn-subscription{
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 20px 20px 0px;
+    border: 0px;
+    background-color: #fa0101;
+    color: #ffffff;
+    -webkit-box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 20px -4px rgba(0,0,0,0.75);
+}
+.btn-subscription:hover{
+    background-color: #fc4a53;
+}
+
+/* footer */
+
+.page-footer{
+    background-color: #f8f8f8;
+}
