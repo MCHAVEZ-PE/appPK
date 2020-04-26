@@ -9,30 +9,31 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- ADD ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 
 <body>
 
   <!-- navegacion -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- cambiamos por el codigo -->
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  <!-- <div class="container"> -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <!-- cambiamos por el codigo -->
+      <a class="navbar-brand" href="/index.html">PERUCAMBIO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item ">
             <a class="nav-link" href="#">Blog</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item ">
             <a class="nav-link" href="#">Promociones</a>
           </li>
           <li class="nav-item dropdown">
@@ -46,23 +47,23 @@
               <a class="dropdown-item" href="#">admin@perucambio.pe</a>
             </div>
           </li>
-          <li class="nav-item dropdown ml-auto">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Iniciar Sesión</button>
+          <li class="nav-item dropdown ">
+            <a href="/intranet.html" class="btn btn-secondary my-2 my-sm-0" >Iniciar Sesión</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <!-- </div> -->
 
-  <header class="main-header">
+  <header class="main-header saltarmenu">
     <!-- <div class="mensaje">
             <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
         </div> -->
-    <div class="background-overlay ">
-      <div class="container">
+        <div class=" background-overlay ">
+          <div class="container">
         <div class="row">
           <div class="col-md-6 justify-content-center align-self-center ">
-            <p style="font-size: 45px;">
+            <p style="font-size: 45px; color:white; font-weight: bolder;">
               Cambia tu dinero de una forma segura
             </p>
             <div>
@@ -70,72 +71,64 @@
               <button type="button" class="btn btn-success">Crear Cuenta</button>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="boxTipoCambio">
-              <span class="textTipoCambio"> Tipo de Cambio</span>
-              <span class="dataTipoCambio"> Compra: 3.390 || Venta: 3,430 </span>
+         <div class="col-md-6">
+            <div class="boxTipoCambio justify-content-center d-flex ">
+              <span class="textTipoCambio fonttext"> Tipo de Cambio</span>
+              <span class="dataTipoCambio fonttext"> Compra: 3.390 || Venta: 3,430 </span>
             </div>
 
             <form class="formchangecoin">
               <button class="btn-change" ><i class="fa fa-refresh fa-2x" aria-hidden="true"></i></button>
               <div class="form-group">
-                <label class="labelSoles" for="exampleFormControlInput1">SOLES</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1">
+                <label class="labelSoles" for="">SOLES</label>
+                <input type="number" class="form-control" id="">
               </div>
               <div class="form-group">
-                <label class="labelDolares" for="exampleFormControlInput1">DOLARES</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1">
+                <label class="labelDolares" for="">DOLARES</label>
+                <input type="number" class="form-control" id="">
               </div>
               <div class="form-group">
                 <button type="button" class="btn btn-success">INICIAR OPERACION</button>
               </div>
             </form>
 
-          </div>
+          </div>  
         </div>
       </div>
     </div>
   </header>
   <!-- bancos disponibles -->
   <section class="container">
-    <div class="row sectionInfo">
+    <div class="row d-flex align-items-center justify-content-around sectionInfo">
 
-      <div style="width:calc(100%/4) ">
-        <p>Operaciones de cambio <br /> inmediatas atravez de :</p>
+      <!-- <div> -->
+        <p class="text-center" >Operaciones de cambio <br/> inmediatas através de :</p>
+        <img src="https://tkambio.com/wp-content/uploads/2019/09/4123.png" width="120px" height="100px"/>
+        <p class="text-center">A nivel nacional de <br /> Lunes a Domingo</p>
+        <img src="https://tkambio.com/wp-content/uploads/2019/09/23452.png"  width="120px" height="100px"/>
+        <p class="text-center">A nivel nacional de <br /> Lunes a Sábado</p>
       </div>
-      <div>
-        <img src="https://tkambio.com/wp-content/uploads/2019/09/4123.png" />
-      </div>
-      <div style="width:calc(100%/4)">
-        <p>A nivel nacional de <br /> Lunes a Domingo</p>
-      </div>
-      <div>
-        <img src="https://tkambio.com/wp-content/uploads/2019/09/23452.png" />
-      </div>
-      <div style="width:calc(100%/4)">
-        <p>A nivel nacional de <br /> Lunes a Sábado</p>
-      </div>
-
-    </div>
-    <div class="row sectionInfo">
-      <h3>Operaciones interbancarias a todos los bancos de Lima</h3>
+     
+    <!-- </div> -->
+    <div class="row justify-content-center m-3">
+      <h3 class="text-center">Operaciones interbancarias a todos los bancos de Lima</h3>
     </div>
   </section>
-  <div class="  ">
-    <img src="./resources/gif_anuncio.gif" width="100%" height="300px" />
-  </div>
+  <!-- <div class="row"> -->
+    <img  class="imggif" src="./resources/gif_anuncio.gif"  />
+  <!-- </div> -->
   
   <div class="container">
       <hr style="height:40px; width: 80%; border-color: black;"/>
 
       <hr style="height:30px; width: 80%; border-color: #747477d5;"/> 
   </div>
-
+<!-- img of step the register -->
   <div class="container"> 
     <div class="row justify-content-center">
-        <p class="p-informative">¡Compra tus Dólares en <span class="font-weight-bold">4 pasos!</span></p>
+        <p >¡Compra tus Dólares en <span class="font-weight-bold"> 4 pasos!</span></p>
     </div>
-    <div class="row flex-nowrap justify-content-around  align-self-center"> 
+    <div class="row  info-register flex-nowrap justify-content-around  align-self-center"> 
       <div class="d-flex flex-column align-items-center" >
         <img src="./resources/paso1.png" width="260px" alt="paso uno">
         <p class="text-center"><strong >Registrar</strong> los datos necesarios en PERUCAMBIO</p>
@@ -162,28 +155,28 @@
     </div>
     <div class=" row justify-content-center">
       <div class="b-trayectory d-flex flex-column align-items-center"> 
-      <img src="./resources/USUARIOS-AZUL.png"/>
-      <p>+1000</p>
-      <p>Usuarios Registrados</p>
+        <img src="./resources/USUARIOS-AZUL.png"/>
+        <p class="numbers">+1000</p>
+        <p>Usuarios Registrados</p>
       </div>
-      <div class="b-trayectory d-flex flex-column align-items-center">
+      <div class="b-trayectory d-flex flex-column align-items-center ">
         <img src="./resources/OPERACIONES-AZUL.png"/>
-        <p>+1000</p>
+        <p class="numbers">+1000</p>
         <p>Operaciones</p>
       </div>
-      <div class="b-trayectory d-flex flex-column align-items-center">
+      <div class="b-trayectory d-flex flex-column align-items-center ">
           <img src="./resources/SOLES-NEGOCIADOS-AZUL.png"/>
-          <p>+1000</p>
+          <p class="numbers">+1000</p>
           <p>Soles Cambiados</p>
           </div>  
     </div>
   </div>
 
-  <div class="container">
+  <div class="container datahistory" >
     <div class="row">
 
       <div class="col-md-6 justify-content-center">
-        <p class="h2 text-center">PERUCAMBIO - Casa de Cambio en línea</p>
+        <p class="h2 text-center" >PERUCAMBIO - Casa de Cambio en línea</p>
         <p class="h4 text-center">Quienes somos</p>
         <p class="text-center"><strong>Somos una casa de cambio digital</strong>
           Inscritos en el Registro de Empresas y Personas que efectuan Operaciones Financieras o de Cambio de Moneda,
@@ -198,31 +191,28 @@
   </div>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
       <p class="h3 text-center">LO QUE NUESTROS CLIENTES OPINAN</p>
-    </div>
-    <div class="row justify-content-center">
-      <p class="h3 text-center">COMPRAR Y VENDER DÓLARES NUNCA FUE TAN FÁCIL</p>
-    </div>
-    <div class="row justify-content-center" width="100%" height="150px">
-      <!-- <p class="h5 text-center" >aquí adjuntamos un video </p> -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/CFEGZYDhO7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  
+    </div> -->
   </div>
-
-  <div class="container">
+  <!-- video referencial -->
+  <div>   
+    <p class="h3 marginVideoText ">COMPRAR Y VENDER DÓLARES NUNCA FUE TAN FÁCIL</p>
+    <iframe width="98%" style="margin: auto;" height="500vh" src="https://www.youtube.com/embed/CFEGZYDhO7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<!-- init operation -->
+  <div class="container initOperation">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-5">
-        <img src="./resources/ILUSTRACIÓN.png">
+      <div class="col-5">
+        <img class="ilustration" src="./resources/ILUSTRACIÓN.png" >
       </div>
-      <div class="col-md-5 d-flex flex-column justify-content-center">
-        <p class="h2 text-right">¿Convencido? Se parte de la familia TKambio</p>
-        <p class="h4 text-right">NO MÁS COLAS</p>
-        <p class="h4 text-right">DESDE TU CASA U OFICINA</p>
-        <p class="h4 text-right">SIN COMISIONES</p>
-        <p class="h4 text-right">MAYOR SEGURIDAD</p>
-        <button class="btn initOperation" width="400px">INICIAR OPERACION</button>
+      <div class="col-7 d-flex flex-column justify-content-center align-items-end">
+        <p class=" texth2 ">¿Convencido? Se parte de la familia PERUCAMBIO</p>
+        <p class=" texth4 ">NO MÁS COLAS</p>
+        <p class=" texth4 ">DESDE TU CASA U OFICINA</p>
+        <p class=" texth4 ">SIN COMISIONES</p>
+        <p class=" texth4 ">MAYOR SEGURIDAD</p>
+        <button class="btn offset-md-3 btninitOperation " >INICIAR OPERACION</button>
       </div>
     </div>
   </div>
@@ -233,7 +223,7 @@
     </div>
   </div>
    -->
-  <div class="container">
+  <div class="container sendEmail">
     <div class="row d-flex justify-content-center" >
       <div class="col-md-6 d-flex flex-column justify-content-center">
         <p class="text-right" >No pierdas la oportunidad, suscríbete y recibe todo acerca del tipo de cambio</p>
