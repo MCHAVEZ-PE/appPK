@@ -1,26 +1,27 @@
 
 .navbar-brand{
        /* activarlo solo para desktop */
-    color:white !important;
+    color:#000 !important;
     font-weight: bold;
     margin: 15px 0px;
 }
 .navbar{
 
-    background-color: red !important;
-
-    box-shadow: 3px 4px 10px 3px rgba(242,203,242,1);
+    background-color: #ffffff!important;
+    opacity: 0.5;
+    /* box-shadow: 3px 4px 10px 3px rgba(242,203,242,1); */
     /* activarlo solo para desktop */
     /* height: 80px; */
+    font-weight: bold;
 }
 .navbar .navbar-nav .nav-item .nav-link{
-    color: white;
+    color: #000000;
 }
 .navbar .navbar-nav .nav-item .nav-link{
     /* color: white; */
 }
 .saltarmenu{
-    margin-top: 80px;
+    /* margin-top: 80px; */
 
 }
 .saltarmenuIntranet{
@@ -28,7 +29,7 @@
 }
 .main-header{
     background-image: url(../resources/img.jpg);
-    height: 400px;
+    height: 500px;
     max-width: 100%;
     background-size: cover;
   background-position: center;
@@ -36,7 +37,7 @@
 
 }
 .main-header .background-overlay .container {
-    padding-top: 20px;
+    padding-top: 100px;
 }
 .main-header .background-overlay .container 
 .row .col-md-6 .boxTipoCambio{
@@ -52,7 +53,7 @@ span.textTipoCambio{
  
     width: 100%;
     background-color: white;
-
+ 
 }
 span.dataTipoCambio{
     width: 100%;
