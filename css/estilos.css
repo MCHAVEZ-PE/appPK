@@ -325,7 +325,8 @@ margin: 10px 0px;
     width: 100%;
     /* background: #e2e3e5; */
     z-index: 100;
-    background-color: yellow;
+    background-color: #edf3f0;
+    /* opacity: 0.5; */
 }
 
 .wrapper .top-navbar .menubar{
@@ -375,7 +376,7 @@ margin: 10px 0px;
 }
 .wrapper .sidebar{
     position: fixed;
-    background-color: tomato;
+    background-color: #edf3f0;
     height: calc(100% - 60px );
     top: 60px; 
     z-index: 100;
@@ -391,7 +392,7 @@ margin: 10px 0px;
    
     position: relative;
     padding: 10px;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 1px;
 }
 .itemsMenuAjustado{
