@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- ADD ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-navbar">
+            <div id="menubar" class=" d-flex justify-content-center align-items-center menubar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="top-menu">
+
+                <ul class="justify-content-between ">
+                    <li class="d--flex">
+                        <h6>
+                            <span class="badge badge-primary spanmodificado">Tipo de cambio hoy:</span>
+                        </h6>
+                        <div class="ml-2">
+                            <p id="preciodolar">Compra: 3.50 <br /> Venta: 4.10 </p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="d-flex mr-1 ml-1 align-items-center">
+                            <span>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                Hola,Mauricio Chavez</span>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-sm-right"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" id="idprofile">
+                                        <span><i class="fa fa-user-circle" aria-hidden="true"></i>Mi Perfil</a>
+                                    </span>
+                                    <a class="dropdown-item"  href="../index.html" >
+                                        <span>
+                                            <i class="fa fa-sign-out"
+                                            aria-hidden="true"></i>Salir</a>
+                                        </span>
+                                </div>
+                            </div>
+                            <!-- <a class="btn btn-secondary dropdown-toggle"
+                                 href="#" role="button" id="dropdownMenuLink"
+                                  data-toggle="dropdown" aria-haspopup="true" 
+                                  > -->
+
+                            <!-- <a class="btn dropdown-toggle  d-block ml-2" href="#" role="button" 
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true">
+                                <!--  -->
+
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <!--  siderwidth-->
+        <div id="sidebar" class="sidebar menuajustado">
+            <ul id="listamenu" class="listamenu">
+                <li>
+                    <a class="itemsMenuAjustado" id="profile">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">PERFIL</span>
+                    </a>
+                </li>
+                <li>
+                    <!-- d-block nwrap -->
+                    <a class="itemsMenuAjustado" id="new">
+                        <span class="icon"><i class="fa fa-usd" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">NUEVA OPERACION</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="itemsMenuAjustado" id="bankAccount">
+                        <span class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                        <span class="title">CUENTAS BANCARIAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="itemsMenuAjustado" id="bussiness">
+                        <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                        <span class="title">EMPRESAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="itemsMenuAjustado " id="helper">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                        <span class="title">AYUDA</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div id="DatosPersonales21" class="contenedorOpciones">
+
+            <!-- nav -->
+            <div id="contentProfile">
+                <div class="container">
+                    <nav>
+                        <!-- <h3 >PERFIL</h3> -->
+                        <div class="nav nav-tabs" id="nav-tabs" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">Información</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Documento</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Logotipo</a>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <p> Datos de usuario</p>
+                            </div>
+
+                            <div id="" class="container">
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Usuario</label>
+                                    <input class="form-control" disabled="false" />
+                                    <span></span>
+
+                                </div>
+                                <div class="alert alert-secondary" role="alert">
+                                    <label>Informacion</label>
+                                    <p>En caso de no querer actualizar su contraseña deje el campo de contraseña en
+                                        blanco.</p>
+                                </div>
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">contraseña actual</label>
+                                    <input class="form-control" />
+                                </div>
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Nueva contraseña</label>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Confirmar contraseña</label>
+                                    <input class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <p> Datos de persona natural</p>
+                            </div>
+
+                            <div id="DatosPersonales3" class="container">
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Nro DNI</label>
+                                    <input class="form-control" />
+                                    <span></span>
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Nombres</label>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Apellido Paterno</label>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Apellido Materno</label>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">correo electronico</label>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">celular</label>
+                                    <select class="form-control col-sm-2 align-self-center" name="" id="">
+                                        <option>PERU</option>
+                                    </select>
+                                    <input class="form-control" />
+                                </div>
+
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">Telefono</label>
+                                    <input class="form-control" />
+
+                                </div>
+                                <div class="form-group d-flex justify-content-end">
+                                    <div class="d-flex justify-content-between" width="500px">
+                                        <div class="mt-1 mb-1 ml-5">
+
+                                            <button class="btn btn-primary">Guardar</button>
+                                        </div>
+                                        <div class="mt-1 mb-1 ml-5">
+                                            <button class="btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+                            <div class="container">
+                                <p> Documentos de persona natural</p>
+                            </div>
+                            <div id="DatosPersonales2" class="container">
+
+                                <div class="alert alert-secondary" role="alert">
+                                    <label>Nota:</label>
+                                    <p>Se pueden subir archivos pdf o imágenes.</p>
+                                </div>
+
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">DNI</label>
+                                    <input type="file" />
+                                    <span></span>
+                                </div>
+                                <div class="form-group d-flex justify-content-end">
+                                    <div class="d-flex justify-content-between" width="500px">
+                                        <div class="mt-1 mb-1 ml-5">
+
+                                            <button class="btn btn-primary">Guardar</button>
+                                        </div>
+                                        <div class="mt-1 mb-1 ml-5">
+                                            <button class="btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container">
+                                <p> Logitipo</p>
+                            </div>
+
+                            <div id="DatosPersonales2" class="container">
+                                <div class="alert alert-secondary" role="alert">
+                                    <label>Informacion</label>
+                                    <p>El logotipo a subir debe ser cuadrado y de dimensiones no menores a 150x150 ni
+                                        mayores a 600x600.</p>
+                                </div>
+                                <div class="form-group d--flex">
+                                    <label class="col-sm-2 align-self-center">DNI</label>
+                                    <input type="file" />
+                                    <span></span>
+                                </div>
+                                <div class="form-group d-flex justify-content-end">
+                                    <div class="d-flex justify-content-between" width="500px">
+                                        <div class="mt-1 mb-1 ml-5">
+
+                                            <button class="btn btn-primary">Guardar</button>
+                                        </div>
+                                        <div class="mt-1 mb-1 ml-5">
+                                            <button class="btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentNewOperation">
+
+                <div class="container">
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="d-flex justify-content-start align-items-start ">
+                            <div style="background:greenyellow; border: greenyellow;" class="boxnumbers mr-4 ml-4 rounded-circle d-flex justify-content-center">1</div>
+                            <div class="boxnumbers mr-4 ml-4 rounded-circle d-flex justify-content-center">2</div>
+                            <div class="boxnumbers mr-4 ml-4 rounded-circle d-flex justify-content-center">3</div>
+                        </div>
+                        <div class="rounded boxtext m-3 " style="background: #c3c3c3; color: #ffffff; border: #c3c3c3;" >
+                            <h3 >Realizar Operación</h3>
+                        </div>
+                    </div>
+                    <div style="position: relative;" class="d-flex flex-column align-items-center m-3">
+                        <div class="boxchange m-3 d-flex align-items-center">
+                            <input class="tamanoinput" type="number">
+                            <div class="d-flex rounded flex-column justify-content-end">
+                                <p class="pmodificado">Tu envias</p>
+                                <p class="text-right"><strong>PEN</strong></p>
+                            </div>
+                        </div>
+                        <button class="btnchange rounded-circle"><i class="fa fa-exchange"
+                                aria-hidden="true"></i></button>
+                        <div class="boxchange m-3 d-flex align-items-center">
+                            <input class="tamanoinput" type="number">
+                            <div class="d-flex rounded flex-column justify-content-end">
+                                <p class="pmodificado ">Tu recibes</p>
+                                <p class="text-right"><strong>USD</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <p>Tipo de cambio utilizado a 4.00</p>
+                    </div>
+                    <div class="row  d-flex justify-content-center m-3">
+                        <!-- mejorar cambio abrir popup -->
+                        <button class="btn btn-primary">Click para mejor tu cambio</button>
+                    </div>
+                    <div class="row d-flex justify-content-center m-2">
+                        <input class="input-cupon" type="text" placeholder="ingresar cupón" />
+                        <button class="btn-aplicarcupon">Aplicar</button>
+                        <!-- <div>
+                        </div>
+                        <div>
+                        </div> -->
+                    </div>
+                    <div class="row d-flex justify-content-center m-2">
+                        <button class="btn-aplicarcupon">Iniciar Operación</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentBankAccount">
+                <div class="container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tabs" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-listAccount-tab" data-toggle="tab"
+                                href="#nav-listAccount" role="tab" aria-controls="nav-home" aria-selected="true">Listas
+                                de
+                                Cuentas</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                href="#nav-addnewAccount" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Registrar Cuenta</a>
+
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-listAccount" role="tabpanel"
+                            aria-labelledby="nav-listAccount-tab">
+                            <div class="row m-3 d-flex justify-content-between">
+                                <div class="ml-2 d-flex align-items-center">
+                                    <label for="">Mostrar</label>
+                                    <select class="custom-select m-1 " id="countselect">
+                                        <option>10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                    </select>
+                                    <label for="">registros</label>
+                                </div>
+                                <div class="mr-2 d-flex align-items-center">
+                                    <label for="" class="mr-2">Buscar</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                            <table class="table .table-striped ">
+                                <thead>
+                                    <tr>
+                                        <th>Alias</th>
+                                        <th>Moneda</th>
+                                        <th>Banco</th>
+                                        <th>Nro Cuenta</th>
+                                        <th>CCI</th>
+                                        <th>Departamento-Provincia</th>
+                                        <th>Monto Disponible</th>
+                                        <th>Estado</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <tr>
+                                        <td>card</td>
+                                        <td>PEN S/</td>
+                                        <td>Banco de crédito del Perú</td>
+                                        <td> 12345679890</td>
+                                        <td>123</td>
+                                        <td>Amazonas - Chachapoyas</td>
+                                        <td>Amazonas - Chachapoyas</td>
+                                        <td><span class="badge badge-primary text-wrap">Habilitado</span></td>
+                                        <td>
+                                            <div>
+                                                <button class="btn btn-light"><i class=" fa fa-pencil-square-o"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-usd square-o"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-ban"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-trash-o"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>card</td>
+                                        <td>PEN S/</td>
+                                        <td>Banco de crédito del Perú</td>
+                                        <td> 12345679890</td>
+                                        <td>123</td>
+                                        <td>Amazonas - Chachapoyas</td>
+                                        <td>Amazonas - Chachapoyas</td>
+                                        <td><span class="badge badge-danger text-wrap"">Suspendido</span></td>
+                                        <td>
+                                            <div>
+                                            <button class=" btn btn-light"><i class=" fa fa-refresh"
+                                                    aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-trash-o"
+                                                        aria-hidden="true"></i></button>
+                        </div>
+                        </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="8">Mostrando registros del 1 al 2 de un total de 2 registros</td>
+                                <td>
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                           </table>
+                             </div>
+                    </div>
+                    <div class="tab-pane fade " id="nav-addnewAccount" role="tabpanel"
+                        aria-labelledby="nav-addnewAccount-tab">
+                        <div class="m-auto  ">
+                            <div class="container addnewAccount">
+
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group d-flex flex-column align-items-end">
+                                            <label class=" col-lg-6 pl-0" for="">Alias</label>
+                                            <input type="text " class="form-control col col-lg-6 h-input">
+                                        </div>
+                                        <div class="form-group d-flex flex-column align-items-end">
+                                            <label class="col-lg-6 pl-0" for="">Nro de Cuenta</label>
+                                            <input type="text" class="form-control col-lg-6 h-input">
+                                        </div>
+                                        <div class="form-group d-flex flex-column align-items-end">
+                                            <label class="col-lg-6 pl-0" for="">DNI/RUC propietario de la cuenta</label>
+                                            <input type="text " class="form-control col-lg-6 h-input">
+                                        </div>
+                                        <div class="form-group d-flex flex-column align-items-end">
+                                            <label class="col-lg-6 pl-0" for="">Nombre/Razón Social propietario de la
+                                                cuenta</label>
+                                            <input type="text " class="form-control col-lg-6 h-input">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <div class="form-group ">
+                                                <label class="" for="">Moneda</label>
+                                                <input type="text " class="form-control col-lg-10 h-input">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="">Banco</label>
+                                                <input type="text " class="form-control col-lg-11 h-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">CCI</label>
+                                            <input type="text " class="form-control col-lg-9 h-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Departamento</label>
+                                            <input type="text" class="form-control col-lg-9 h-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-6 pl-0" for="">Provincia</label>
+                                            <input type="text " class="form-control col-lg-9 h-input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group d-flex justify-content-center">
+                                    <div class="d-flex justify-content-end" width="500px">
+                                        <div class="mt-1 mb-1 ml-5">
+
+                                            <button class="btn btn-primary">Guardar</button>
+                                        </div>
+                                        <div class="mt-1 mb-1 ml-5">
+                                            <button class="btn btn-danger">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="contentBussiness">
+            <div class="container">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tabs" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-listAccount-tab" data-toggle="tab"
+                            href="#nav-listbussines" role="tab" aria-controls="nav-home" aria-selected="true">Listas de
+                            Empresas</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-addnewBussiness"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">Registrar Cuenta</a>
+
+                    </div>
+                </nav>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-listbussines" role="tabpanel"
+                        aria-labelledby="nav-listbussines-tab">
+
+
+                        <div class="row m-3 d-flex justify-content-between">
+                            <div class="ml-2 d-flex align-items-center">
+                                <label for="">Mostrar</label>
+                                <select class="custom-select m-1 " id="countselect">
+                                    <option>10</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                </select>
+                                <label for="">registros</label>
+                            </div>
+                            <div class="mr-2 d-flex align-items-center">
+                                <label for="" class="mr-2">Buscar</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table .table-striped ">
+                                <thead>
+                                    <tr>
+                                        <th>RUC</th>
+                                        <th>RAZON SOCIAL</th>
+                                        <th>NOMBRE COMERCIAL</th>
+                                        <th>Nro Cuenta</th>
+                                        <th>ACCIONES</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <tr>
+                                        <td>20538856674</td>
+                                        <td>ARTROSCOPICTRAUMA S.A.C.</td>
+                                        <td>Banco de crédito del Perú</td>
+                                        <td> 12345679890</td>
+                                        <td>
+                                            <div>
+                                                <button class="btn btn-light"><i class=" fa fa-pencil-square-o"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-trash-o"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20538856674</td>
+                                        <td>ARTROSCOPICTRAUMA S.A.C.</td>
+                                        <td>Banco de crédito del Perú</td>
+                                        <td> 12345679890</td>
+                                        <td>
+                                            <div>
+                                                <button class="btn btn-light"><i class=" fa fa-pencil-square-o"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn btn-light"><i class="fa fa-trash-o"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4">Mostrando registros del 1 al 2 de un total de 2 registros</td>
+                                        <td>
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="nav-addnewBussiness" role="tabpanel"
+                        aria-labelledby="nav-addnewBussiness-tab">
+
+                        <div class="row">
+                            <p> Datos de persona juridica</p>
+                        </div>
+
+                        <div id="DatosPersonales2" class="container">
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">NRO RUC</label>
+                                <input class="form-control" />
+                                <span></span>
+
+                            </div>
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">RAZON SOCIAL</label>
+                                <input class="form-control" disabled="false" />
+                            </div>
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">NOMBRE COMERCIAL</label>
+                                <input class="form-control" disabled="false" />
+                            </div>
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">TIPO DE CONTRIBUYENTE</label>
+                                <input class="form-control" disabled="false" />
+                            </div>
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">DIRECCION</label>
+                                <input class="form-control" disabled="false" />
+                            </div>
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">correo electronico</label>
+                                <input class="form-control" />
+                            </div>
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">celular</label>
+                                <select class="form-control col-sm-2 align-self-center" name="" id="">
+                                    <option>PERU</option>
+                                </select>
+                                <input class="form-control" />
+                            </div>
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">Telefono</label>
+                                <input class="form-control" />
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p> Datos de Usuario</p>
+                        </div>
+
+                        <div id="DatosPersonales3" class="container">
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">Usuario</label>
+                                <input class="form-control" disabled="false" />
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">contraseña actual</label>
+                                <input class="form-control" />
+                            </div>
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">Nueva contraseña</label>
+                                <input class="form-control" />
+                            </div>
+
+
+                            <div class="form-group d--flex">
+                                <label class="col-sm-2 align-self-center">Confirmar contraseña</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="form-group d-flex justify-content-end">
+                                <div class="d-flex justify-content-between" width="500px">
+                                    <div class="mt-1 mb-1 ml-5">
+
+                                        <button class="btn btn-primary">Guardar</button>
+                                    </div>
+                                    <div class="mt-1 mb-1 ml-5">
+                                        <button class="btn btn-danger">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contentHelper">
+
+            <div class="container">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#info1"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    ¿NECESITO UNA CUENTA EN DÓLARES?
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="info1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#info3" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿DEBO GUARDAR MIS CUENTAS A LA HORA DE REGISTRARME?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="info3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#info4" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿TKAMBIO IRÍA A MI CASA O A MI TRABAJO A ENTREGARME EL DINERO?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="info4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#info4"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    ¿QUÉ ME ASEGURA QUE TKAMBIO ME ENVÍE EL DINERO?
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#info4">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#info5" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿LA TRANSACCIÓN SE REALIZA DENTRO DE LA PÁGINA?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="info5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#info6" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿CUÁNTO ME CUESTA EL CAMBIO DE MONEDA EN TKAMBIO?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="info6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice
+                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dropdowm -->
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+
+    </script>
+    <script src="../js/main.js">
+    </script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

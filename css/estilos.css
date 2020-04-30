@@ -242,8 +242,8 @@ margin: 10px 0px;
 /* intranet */
 
 .card{
-    width: 400px;
-    margin: 20px;
+    /* width: 400px; */
+    /* margin: 20px; */
 }
 /* responsive */
 
@@ -276,6 +276,285 @@ margin: 10px 0px;
 .saltarborde{
     margin-top: 100px;
 }
+.terminos{
+    color: tomato;
+     margin: 5px;
+     font-size: 12px;
+}
+.terminos:hover{
+    color: tomato; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btnRegistrar{
+    /* opacity: 0.5; */
+    background-color: tomato !important;
+    margin: 5px;
+}
+.boxMenu{
+    width: 200px;
+    height: 100vh;
+    background-color: tomato;
+}
+/* PERFIL */
+    .tab-content .tab-pane .row>p{
+        font-size: 20px;
+        margin:1rem;
+        /* border-bottom: 1px solid #d3e0e9; */
+        width: auto;
+        position: relative;
+        left: 35px;
+    }
+    
+.contenedorOpciones div nav .nav-tabs{
+    margin-left: 12px;
+}
+
+.wrapper{
+    /* margin: 5px 0px; */
+}
+.menubar:hover{
+    cursor: pointer;
+}
+.wrapper .top-navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    /* background: #e2e3e5; */
+    z-index: 100;
+    background-color: yellow;
+}
+
+.wrapper .top-navbar .menubar{
+    width: 90px;
+    /* background-color: yellow; */
+    height: 100%;
+    color: #000000;
+}
+
+.wrapper .top-navbar .top-menu{
+    
+    width: calc(100% - 90px);
+    /* box-shadow: 0 1px 1px rgba(0,0,0,0.1); */
+    
+    /* margin: 5px 5px 0px 0px; */
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapper .top-navbar .top-menu  ul{
+    display: flex;
+    /* align-items: center; */
+    margin: 15px 0px;
+    height: 100%;
+}
+.wrapper .top-navbar .top-menu  ul li,
+    li{
+    list-style: none;
+}
+/* .wrapper .top-navbar .top-menu  ul li a{
+    display: block;
+    margin: 0px 10px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid ;
+    border-radius: 50%;
+    color: red;
+} */
+/* .wrapper .top-navbar .top-menu ul li a:hover{
+    background: red;
+    color:#ffffff;
+} */
+.siderwidth{
+    width: 220px;
+    transition-duration: 0.7s;
+    
+}
+.wrapper .sidebar{
+    position: fixed;
+    background-color: tomato;
+    height: calc(100% - 60px );
+    top: 60px; 
+    z-index: 100;
+}
+.wrapper .sidebar ul{
+ padding: 10px;
+}
+.nwrap{
+    
+    white-space: nowrap;
+}
+.wrapper .sidebar ul li a{
+   
+    position: relative;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+.itemsMenuAjustado{
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    /* white-space: normal; */
+    
+}
+
+/* .wrapper .sidebar ul li a:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 3px;
+height: 100%;
+background: #ffffff;
+display: none;
+} */
+.wrapper .sidebar ul li a{
+    text-decoration: none;
+    margin: 20px 0px;
+    border-bottom: 1px solid;
+}
+.wrapper .sidebar ul li a span.icon{
+    margin-right: 5px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a span.title{
+    display: inline-block;
+    /* text-decoration: none; */
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    /* background: #e93636; */
+    opacity: 0.5;
+    color: #ffffff;
+}
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.menuajustado{
+    width: 84px;
+    transition-duration: 0.7s;
+} 
+.contenedor{
+    position: absolute;
+    top: 70px;
+    left: 84px;
+    margin: 5px;
+}
+.contenedorOpciones{
+    position: absolute;
+    top: 80px;
+    left: 75px;
+    z-index: 50;
+    width: calc( 100% - 90px );
+}
+
+/*
+ pruebas
+*/
+.boxnumbers{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border:1px solid;
+}
+.boxtext{
+    border: 1px solid;
+    padding: 10px;
+}
+.boxchange{
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.boxchange>div{
+    border: 1px solid;
+    padding: 5px;
+    width: calc(80% * 0.6);
+    
+}
+.pmodificado{
+    text-align:end;
+}
+.boxchange input{
+    height: 50px;
+}
+.boxchange>div>p{
+    margin:0px;
+    width: 100%;
+
+}
+.btnchange{
+    position: absolute;
+    left: 560px;
+    top: 45px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    background: tomato;
+    outline:none !important;
+    /* border-radius: 50%; */
+}
+.form-group-modify{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+input.h-input{
+    height: 35px!important;
+}
+
+/* realizar operacion */
+
+.tamanoinput{
+    width: 300px;
+    border: 1px solid #c8c8c8;
+    padding: 2px 5px;
+
+}
+.tamanoinput div p{
+    font-size: 10px;
+}
+.input-cupon{
+
+    width: 240px!important;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    /* border: 10rem; */
+    border: 1px solid yellow;
+    height: 40px;
+    outline: none;
+}
+.btn-aplicarcupon{
+    border: 1px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: 40px;
+    margin: 5px;
+}
+.btn-aplicarcupon:focus{
+    outline: none;
+}
+.spanmodificado{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+#preciodolar{
+    font-weight: bold;
+    padding: 2px;
+    font-size: 10px!important;
+}
+
 @media (min-width: 356px) and (max-width: 576px) { 
     .info-register{
         flex-direction: column;
@@ -312,8 +591,8 @@ margin: 10px 0px;
     .sendEmail{
         display: none;
     }
-    ..cardModify{
-    width: auto;
+    .cardModify{
+    width: 100% !important;
     }
     .overtypePerson{
         flex-direction: column;
@@ -338,5 +617,57 @@ margin: 10px 0px;
     .OverCheckbox label{
         font-size: 13px;
     }
-
+    .textTerminos{
+        font-size: 9px;
+    }
+    .menuajustado{
+        /* display: none; */
+        width: 0px;
+        overflow: hidden;
+    }
+    
+     
+    .itemsMenuAjustado{
+        /* white-space: normal; */
+        margin: 0px 2px;
+        font-size: 8px;
+    }
+    .contenedorOpciones{
+        width: 100%;
+        left: 0px;
+    }
+    .pmodificado{
+        text-align: end;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .btnchange{
+        left: 180px;
+        top: 50px;
+        outline: 0 ;       
+    }
+    
+    .btnchange:focus{
+        outline: none;
+    }
+    .contenedorOpciones{
+        top:100px;
+    }
+    .wrapper .top-navbar{
+        height: 80px;
+    }
+    .wrapper .sidebar{
+        height: calc(100% - 80px);
+        top: 80px;
+    }
+    .spanmodificado{
+        display: none;
+    }
+    #preciodolar{
+        padding: 0px;
+        font-size: 10px;
+    }
+    .wrapper .top-navbar .top-menu ul{
+        padding-left: 0px;
+    }
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- ADD ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+    <div>
+        <h3>Historial de Operaciones</h3>
+        <div class="row m-auto d-flex justify-content-between">
+            <div class="ml-2">
+                <label for="">Mostrar</label>
+                <select id="countselect">
+                    <option>10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+                <label for="">registros</label>
+            </div>
+            <div class="mr-2">
+                <label for="">Buscar</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <table class="table .table-striped ">
+            <thead>
+                <tr>
+                    <th>Nro Operación</th>
+                    <th>fecha</th>
+                    <th>Tipo</th>
+                    <th>T/C</th>
+                    <th>Monto Enviado</th>
+                    <th>Monto recibido</th>
+                    <th>Cuenta TK</th>
+                    <th>Cuenta Cliente</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>TK-19895</td>
+                    <td>    29/02/2020 08:52</td>
+                    <td>Compra</td> 
+                    <td>3.4700</td>
+                    <td>	PEN S/ 1214.50</td>
+                    <td>	USD $ 350.00</td>
+                    <td>	BCP 1932568457008</td>
+                <td>	BCP 19433901409146<br/>
+                    Cuenta bancaria suspendida</td>
+                <td><span class="badge badge-primary text-wrap">Finalizado</span></td>
+    </tr>
+    <tr>
+        <td>TK-19895</td>
+        <td>    29/02/2020 08:52</td>
+        <td>Compra</td> 
+        <td>3.4700</td>
+        <td>	PEN S/ 1214.50</td>
+        <td>	USD $ 350.00</td>
+        <td>	BCP 1932568457008</td>
+    <td>	BCP 19433901409146<br/>
+        Cuenta bancaria suspendida</td>
+    <td><span class="badge badge-primary text-wrap">Finalizado</span></td>
+</tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="8">Mostrando registros del 1 al 2 de un total de 2 registros</td>
+
+            <td>
+                <button>1</button>
+                <button>-</button>
+                <button>2</button>
+                <button>+</button>
+                <button>2</button>
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    </script src="../js/main.js">
+</body>
+
+</html>
