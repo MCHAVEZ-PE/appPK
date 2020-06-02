@@ -12,30 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/estilos.css">
-
 </head>
 
 <body class="sb-nav-fixed">
-    <div id="bg-spinner">
+    <div style="display: none;" id="bg-spinner">
         <div class="opaco"></div>
         <div class="spinnerimg">
             <img width="200px" src="./resources/spinner.jpeg" />
         </div>
     </div>
-    <!-- img anuncio -->
-    <div id="capaAnuncio" class="capaAnuncio">
-        <div class="opaco-Anuncio"></div>
-        <div class="boxbtnCerrar">
-            <button class="btn btncerrar" onclick="cerrarAnuncio();">X</button>
-        </div>
-        <div class="boxImagen">
-            <img id="imagenAnuncioPrincipal" />
-        </div>
-    </div>
-    <nav id="navmenu" class="navbar fixed-top navbar-expand-lg ">
+    
+
+    <nav id="navmenu" class="navbar fixed-top navbar-expand-lg py-1">
         <div class="container ">
             <!-- cambiamos por el codigo -->
-            <a class="navbar-brand" href="/index.html"><img width="60px" src="./resources/logo_transparente.png" /> </a>
+            <a class="navbar-brand my-0 py-0" href="/"><img width="75px" src="./resources/logo_transparente.png" /> </a>
             <button id="btnburger" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Inicio <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="/Blog.html">Blog</a>
@@ -61,11 +52,15 @@
                             Contáctanos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">+51912345678</a>
-                            <a class="dropdown-item" href="#">+51912345678</a>
-                            <a class="dropdown-item" href="#">info@perucambio.com</a>
+                            <a href="https://api.whatsapp.com/send?phone=994001311" class="dropdown-item">+51
+                                994001311</a>
+                            <a href="https://api.whatsapp.com/send?phone=959085111" class="dropdown-item">+51
+                                959085111</a>
+                            <a href="mailto:contacto@perucambio.com" class="dropdown-item">contacto@perucambio.com</a>
+
                         </div>
                     </li>
+
                     <li class="nav-item dropdown ">
                         <a href="./vistas/Login.html" id="btnlogin" class="btn btn-secondary my-2 my-sm-0">Iniciar
                             Sesión</a>
@@ -75,12 +70,9 @@
         </div>
     </nav>
 
-
-    <div id="container" style="margin-top: 140px;">
-
-
+    <div id="container" style="margin-top: 150px;">
         <div id="layoutSidenav_content">
-            <main>
+            <main class="my-5">
                 <div class="container-fluid">
                     <div class="my-2">
                         <div class="accordion" id="accordionExample">
@@ -152,8 +144,9 @@
                                         Tkambio se encuentra supervisado por la superintendencia de Banca, Seguros y
                                         AFPs (SBS) autorizados con número de resolución 030542017 y registrados en la
                                         SUNAT con número RUC: 20602202373 y razón social TK Business Online S.A.C. tenga
-                                        la seguridad que somos una empresa peruana formal y seria y su dinero y monto
-                                        exacto será enviado en los tiempos acordados.
+                                        la seguridad que
+                                        somos una empresa peruana formal y seria y su dinero y monto exacto será enviado
+                                        en los tiempos acordados.
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +190,6 @@
                 </div>
             </main>
             <footer class="page-footer font-small mdb-color pt-4">
-
-
                 <div class="container text-center text-md-left">
 
                     <div class="row text-center text-md-left mt-3 pb-3">
@@ -207,7 +198,7 @@
                             <h6 class="text-uppercase mb-4 text-white font-weight-bold">PERUCAMBIO</h6>
                             <ul class="list-unstyled">
                                 <li><a style="color:#fff" href="">NOSOTROS</a></li>
-                                <li><a style="color:#fff" href="">EMPRESA</a></li>
+                                <!-- <li><a style="color:#fff" href="">EMPRESA</a></li> -->
                                 <li><a style="color:#fff" href="">BLOG</a></li>
                             </ul>
                         </div>
@@ -224,7 +215,7 @@
                             <h6 class="text-uppercase mb-4  text-white font-weight-bold">MAS INFORMACION</h6>
                             <ul class="list-unstyled">
                                 <li><a style="color:#fff" href="">PROMOCIONES</a></li>
-                                <li><a style="color:#fff" href="">CONFIGURAR ALERTAS</a></li>
+                                <!-- <li><a style="color:#fff" href="">CONFIGURAR ALERTAS</a></li> -->
                             </ul>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-3 mx-auto col-sm-6  mt-3">
@@ -232,7 +223,7 @@
                             <ul class="list-unstyled">
                                 <li><a style="color:#fff" href="">TERMINOS Y CONDICIONES</a></li>
                                 <li><a style="color:#fff" href="">POLITICA DE PRIVACIDAD</a></li>
-                                <li><a style="color:#fff" href="">LIBRO DE RECLAMACIONES</a></li>
+                                <!-- <li><a style="color:#fff" href="">LIBRO DE RECLAMACIONES</a></li> -->
                             </ul>
                         </div>
 
@@ -294,18 +285,7 @@
                 </div>
 
             </footer>
-            <!-- <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Peru Cambio - cambio moneda</div>
-                        <div>
-                            <a href="#">Privacidad y Politica</a>
-                            &middot;
-                            <a href="#">Terminos & Condiciones</a>
-                        </div>
-                    </div>
-                </div>
-            </footer> -->
+
         </div>
     </div>
 

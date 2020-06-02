@@ -403,7 +403,6 @@ $(document).ready(function () {
                         tr.insertCell(1).innerHTML = element.moneda;
                         tr.insertCell(2).innerHTML = element.nombre;
                         tr.insertCell(3).innerHTML = element.numeroCuenta;
-
                         tr.insertCell(4).innerHTML = element.cci;
                         tr.insertCell(5).innerHTML = element.ubicacion;
                         var estado = (element.activo == 0) ? "SUSPENDIDO" : "ACTIVO";
@@ -645,7 +644,7 @@ $(document).ready(function () {
                 // debugger;
                 
                 document.getElementById("boxDolares").children[0].children[1].children[1].children[0].innerHTML = "USD"
-                document.getElementById("boxSoles").children[0].children[0].children[2].value = Number(monedasoles * moneda.Compra).toFixed(2);
+                document.getElementById("boxSoles").children[0].children[0].children[2].value = Number(monedadolares * moneda.Compra).toFixed(2);
                 document.getElementById("cambioActual").innerText = moneda.Compra;
                 document.getElementById("cambioActual").setAttribute("codigo", moneda.idCompra);
                 document.getElementById("ventaS").classList.remove('addfocus');
@@ -718,9 +717,9 @@ $(document).ready(function () {
             }
             var tipmoneda = document.getElementById("tipoDolares").innerHTML;
 
-            console.log(tipmoneda);
+            // console.log(tipmoneda);
             if (tipmoneda === "USD") {
-                console.log("vendes")
+                // console.log("vendes")
                 document.getElementById("monedaSoles").value = (Number(dolares) * moneda.Compra).toFixed(2);
             }
             if (tipmoneda === "PEN") {
@@ -1008,7 +1007,7 @@ $(document).ready(function () {
     }
     iniciarOpe = function () {
 
-        // console.log("dadadsa")
+        console.log("dadadsa")
         document.getElementById("b1").style.background = "#ffff";
         document.getElementById("b1").style.color = "#000";
         document.getElementById("b2").style.background = "#7CC62A";

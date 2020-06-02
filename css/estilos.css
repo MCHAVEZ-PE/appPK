@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
     width: 100%;
@@ -163,7 +163,7 @@ a strong {
     font-weight: bolder;
     /* float: left; */
     position: relative;
-
+   text-shadow:  4px 4px 3px #07345B;
     white-space: wrap;
 }
 
