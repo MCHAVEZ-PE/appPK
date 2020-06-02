@@ -1,6 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
 }
 
 .capaAnuncio {
@@ -87,6 +94,7 @@ body {
 
 label {
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .navbar-brand {
@@ -119,10 +127,12 @@ label {
 .btn-green {
     background: linear-gradient(#7CC62A, #80CC2B);
     color: #FFF !important;
-    font-weight:700 ;
+    font-weight: 700;
 }
-.card-header{
-    background: linear-gradient(#07345B, #093D6A);
+
+.card-header {
+    /* background: linear-gradient(#07345B, #093D6A); */
+    background: #46cbff;
     color: #fff;
 }
 
@@ -153,7 +163,7 @@ a strong {
     font-weight: bolder;
     /* float: left; */
     position: relative;
-    /* animation: maquina 0.5s infinite alternate steps(2); */
+
     white-space: wrap;
 }
 
@@ -252,7 +262,6 @@ span.textTipoCambio {
     padding: 0.2rem 0.5rem;
 }
 
-
 ol {
     padding-left: 10px;
 }
@@ -267,7 +276,7 @@ span.dataTipoCambio {
 
 label.TextSoles {
     margin: 10px;
-
+    font-family: 'Roboto', sans-serif;
     /* background-color: teal; */
 }
 
@@ -381,7 +390,7 @@ div.boxSoles {
 }
 
 .p-informativo {
-    font-family: monospace;
+    /* font-family: monospace; */
     font-weight: 400;
     font-size: 2rem;
 }
@@ -752,6 +761,7 @@ display: none;
 
 .boxMoney {
     border: 1px solid;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .tamanoinput1:focus,
@@ -768,6 +778,7 @@ display: none;
     border: 1px solid;
     padding: 5px;
     width: 7rem;
+    background: linear-gradient( #46cbff, #91e0ff);
 }
 
 /* #moendaDolares::before{ */
@@ -789,10 +800,10 @@ display: none;
 
 .btnchange {
     position: absolute;
-    /* left: 540px; */
-    top: -45px;
-    height: 80px;
-    width: 80px;
+    left: 140px;
+    top: -35px;
+    height: 60px;
+    width: 60px;
     border: 2px solid #ffffff;
     color: #7CC62A;
     font-size: 1.3rem;
@@ -826,18 +837,19 @@ input.h-input {
 }
 
 .tamanoinput1 {
-    width: 16rem;
+    width: 26.7rem;
     padding: 2px 5px;
     border: none;
 }
 
 .tamanoinput2 {
-    width: 15.3rem;
+    width: 26rem;
     border: none;
 }
 
 .monedaFont {
     font-size: 25px;
+    margin: 0px 0.7rem;
 }
 
 .tamanoinput1 div p {
@@ -1030,7 +1042,7 @@ input.h-input {
 
 #textoRecuerda {
     font-size: 0.9rem;
-    font-family: inherit;
+
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -1166,6 +1178,20 @@ table {
     margin: 10px
 }
 
+/* INTRANET */
+.sd-sidernav-light .sb-sidenav-menu .nav-link {
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: #ffffff;
+}
+.sd-sidernav-light{
+  
+    background:linear-gradient(#07345B, #093D6A);
+    /* background-color: r; */
+  }
+#btnMejorarPromo{
+    background:linear-gradient(#07345B, #093D6A) !important;
+    
+}
 @media (min-width: 993px) and (max-width: 1199px) {
     /* .btnchange {
         position: absolute;
@@ -1304,7 +1330,7 @@ table {
     }
 
     .btnchange {
-        /* left: 180px; */
+        left: 25px;
         /* top: 50px; */
         outline: 0;
     }
@@ -1452,6 +1478,14 @@ table {
 
     iframe {
         width: auto;
+    }
+
+    .tamanoinput1 {
+        width: 10.7rem !important;
+    }
+
+    .tamanoinput2 {
+        width: 10rem !important;
     }
 }
 
