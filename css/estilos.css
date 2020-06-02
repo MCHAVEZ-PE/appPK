@@ -132,7 +132,7 @@ label {
 
 .card-header {
     /* background: linear-gradient(#07345B, #093D6A); */
-    background: #46cbff;
+    background: linear-gradient( #46cbff, #91e0ff);
     color: #fff;
 }
 
@@ -1188,9 +1188,14 @@ table {
     background:linear-gradient(#07345B, #093D6A);
     /* background-color: r; */
   }
+
 #btnMejorarPromo{
     background:linear-gradient(#07345B, #093D6A) !important;
     
+}
+.btn-link{
+    color:#fff;
+    font-weight: bolder;
 }
 @media (min-width: 993px) and (max-width: 1199px) {
     /* .btnchange {
