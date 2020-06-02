@@ -1,238 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intranet</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- ADD ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+  <!-- ADD ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <!-- cambiamos por el codigo -->
-          <a class="navbar-brand" href="../index.html">PERUCAMBIO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Promociones</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Contáctanos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">+51912345678</a>
-                  <a class="dropdown-item" href="#">+51912345678</a>
-                  <a class="dropdown-item" href="#">admin@perucambio.pe</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown ">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-              </li>
-            </ul>
+
+<body style="width:100%">
+  <div id="bg-spinner">
+    <div class="opaco"></div>
+    <div class="spinnerimg">
+      <img width="200px" src="../../resources/spinner.jpeg" />
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center  saltarmenuIntranet">
+    <div class="card mb-3">
+
+      <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Ingresar a cuenta</strong>
+      </h5>
+
+      <!--Card content-->
+      <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form style="color: #757575;" action="#!">
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="text-left" for="materialLoginFormEmail">Correo Electronico</label>
+            <input id="usuario" type="text" placeholder="Ingrese su usuario" class="form-control">
           </div>
-        </nav>
 
-        
-        <div class="container d-flex justify-content-center  saltarmenuIntranet">
-          <div class="card mb-3">
-
-            <h5 class="card-header info-color white-text text-center py-4">
-              <strong>Ingresar a cuenta</strong>
-            </h5>
-          
-            <!--Card content-->
-            <div class="card-body px-lg-5 pt-0">
-          
-              <!-- Form -->
-              <form  style="color: #757575;" action="#!">
-          
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="text-left" for="materialLoginFormEmail">Usuario: DNI, CE O RUC</label>
-                  <input type="email" id="" placeholder="Ingrese su usuario" class="form-control">
-                </div>
-          
-                <!-- Password -->
-                <div class="form-group">
-                  <label class="text-left"  for="materialLoginFormPassword">Contraseña</label>
-                  <input type="password" id="materialLoginFormPassword" placeholder="Contraseña" class="form-control">
-                </div>
-          
-                <div class="d-flex justify-content-around">
-                  <div>
-                    <!-- Remember me -->
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
-                      <label class="form-check-label" for="materialLoginFormRemember">Recordar sesión</label>
-                    </div>
-                  </div>
-                  <div>
-                    <!-- Forgot password -->
-                    <a href="/ResetPassword.html">¿Olvidó su Contraseña?</a>
-                  </div>
-                </div>
-          
-                <!-- Sign in button -->
-                <a class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" href="./Operaciones.html">Ingresar</a>
-          
-                <!-- Register -->
-                <p class="text-center" >¿Eres nuevo?
-                  <a href="./Registro.html">Registrate</a>
-                </p>
-          
-          
-              </form>
-              <!-- Form -->
-          
-            </div>
-          
+          <!-- Password -->
+          <div class="form-group">
+            <label class="text-left" for="materialLoginFormPassword">Contraseña</label>
+            <input id="password" type="password" placeholder="Contraseña" class="form-control">
           </div>
-        </div>
 
-
-
-         <footer class="page-footer font-small mdb-color pt-4">
-
-          <!-- Footer Links -->
-          <div class="container text-center text-md-left">
-        
-            <!-- Footer links -->
-            <div class="row text-center text-md-left mt-3 pb-3">
-        
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">PERUCAMBIO</h6>
-                <ul  class="list-unstyled">
-                  <li><a href="">NOSOTROS</a></li>
-                  <li><a href="">EMPRESA</a></li>
-                  <li><a href="">BLOG</a></li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-        
-              <hr class="w-100 clearfix d-md-none">
-        
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">AYUDA</h6>
-                <ul  class="list-unstyled">
-                  <li><a href="">AYUDA AL CLIENTE</a></li>
-                  <li><a href="">PREGUNTAS FRECUENTES</a></li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-        
-              <hr class="w-100 clearfix d-md-none">
-        
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">MAS INFORMACION</h6>
-                <ul  class="list-unstyled">
-                  <li><a href="">PROMOCIONES</a></li>
-                  <li><a href="">CONFIGURAR ALERTAS</a></li>
-                </ul>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">LEGAL</h6>
-                <ul  class="list-unstyled">
-                  <li><a href="">TERMINOS Y CONDICIONES</a></li>
-                  <li><a href="">POLITICA DE PRIVACIDAD</a></li>
-                  <li><a href="">LIBRO DE RECLAMACIONES</a></li>
-                </ul>
-              </div>
-        
-              <!-- Grid column -->
-              <hr class="w-100 clearfix d-md-none">
-        
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">CONTACTANOS</h6>
-                <p>
-                  <i class="fa fa-home mr-3"></i>L-V: 9:00 AM - 7:00 PM</p>
-                <p>
-                  <i class="fa fa-home mr-3"></i>S-D: 11:00 PM - 2:00 PM</p>
-                <p>
-                  <i class="fa fa-envelope mr-3"></i>mail: perucambio@gmail.com</p>
-                <p>
-                  <i class="fa fa-phone mr-3"></i> +912345678</p>
-              </div>
-              <!-- Grid column -->
-        
+          <div>
+            <!-- Remember me -->
+            <div class="form-check">
+              <input id="recordarsession" type="checkbox">Recordar sesión</input>
+              <a style="font-size: 12px;" href="./ResetPassword.html">¿Olvidó su Contraseña?</a>
             </div>
-            <!-- Footer links -->
-        
-            <hr>
-        
-            <!-- Grid row -->
-            <div class="row d-flex align-items-center">
-        
-              <!-- Grid column -->
-              <div class="col-md-7 col-lg-8">
-        
-                <!--Copyright-->
-                <p class="text-center text-md-left">© 2020 Copyright:
-                  <a href="/">
-                    <strong>dev</strong>
-                  </a>
-                </p>
-        
-              </div>
-              <!-- Grid column -->
-        
-              <!-- Grid column -->
-              <div class="col-md-5 col-lg-4 ml-lg-0">
-        
-                <!-- Social buttons -->
-                <div class="text-center text-md-right">
-                  <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                        <i class="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-        
-              </div>
-              <!-- Grid column -->
-        
-            </div>
-            <!-- Grid row -->
-        
           </div>
-          <!-- Footer Links -->
-        
-        </footer>
-   
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          <!-- Sign in button -->
+          <a class="btn btn-green btn-rounded btn-block my-4" type="submit"
+            onclick="javascript:validarIngreso();">Ingresar</a>
+
+          <!-- Register -->
+          <p class="text-center">¿Eres nuevo?
+            <a href="./Registro.html">Registrate</a>
+          </p>
+
+
+        </form>
+        <!-- Form -->
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -241,5 +84,22 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="../js/consultas.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/login.js"></script>
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5ecee4338ee2956d73a53f41/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
 </body>
+
 </html>

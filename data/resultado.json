@@ -1,0 +1,296 @@
+{
+    "data": [{
+      
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-87af0a0d-f458-4b6d-b635-e79da2f95a4d",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+     
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "48043461",
+            "USUARIO": "48043461",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+   
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+    
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-92faec9d-515d-4b5a-a6e8-ab1c15db6f32",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+     
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "48114644",
+            "USUARIO": "48114644",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+      
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+        {  
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-fb38536f-7f3e-4cc4-8e3c-9161460ee456",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+          
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "61783106",
+            "USUARIO": "61783106",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+ 
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+        
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-ece3edda-9c10-4556-9bfc-e946eab5fda9",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "74747922",
+            "USUARIO": "74747922",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {   "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-20bc8d90-edbb-4465-bea6-a443b7bb1fc7",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70115003",
+            "USUARIO": "70115003",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-d0a6fb17-9abe-416f-b51d-c7a3296e9c24",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "76260882",
+            "USUARIO": "76260882",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-3a2ed4a9-a347-43b8-a741-c122ad265f69",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "76669298",
+            "USUARIO": "76669298",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-83475091-26cf-4294-9599-768d95d2f8c8",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "74619224",
+            "USUARIO": "74619224",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-1ed5a20d-074a-4ff8-a3d1-73264706069a",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "75600109",
+            "USUARIO": "75600109",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-4ba21c80-a045-41ec-a20d-22af0e34e2df",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "78375717",
+            "USUARIO": "78375717",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-04d682d2-0e2f-422e-a896-d69b55038ea2",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70794525",
+            "USUARIO": "70794525",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-3c3aa18f-b0a9-4e59-9bf6-66600c9ef3a0",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "71336886",
+            "USUARIO": "71336886",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-1179c5e7-f8e9-4e24-931c-fa2f2e1fbc1b",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "47967947",
+            "USUARIO": "47967947",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        },
+
+        {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-94bd3133-43f7-431f-97df-c13be093594c",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "72159155",
+            "USUARIO": "72159155",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-328e0f75-3a4e-4ed9-9878-45b859da1984",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70438083",
+            "USUARIO": "70438083",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-c4f49b10-0454-484d-b18c-def97194de84",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "10229339",
+            "USUARIO": "10229339",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-fc27caf7-209f-46f6-91cd-635967b78d24",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "71377135",
+            "USUARIO": "71377135",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-8d91d903-ac1e-466b-b033-c7cdb6538c95",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70428879",
+            "USUARIO": "70428879",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-d7c5c0a8-d7be-4bc5-bac3-76217083325a",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "74701535",
+            "USUARIO": "74701535",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-697528d9-b6ec-4f18-90c2-d579d874224b",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "72716523",
+            "USUARIO": "72716523",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-2002e911-e1b5-4083-9c9c-6430694987e6",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70205309",
+            "USUARIO": "70205309",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-dd7867db-2956-4ec7-ab52-d113a181ac7b",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "70547681",
+            "USUARIO": "70547681",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-784789bd-92c2-4201-a463-83be4b2ba594",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "71482747",
+            "USUARIO": "71482747",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+             "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-b3f15143-e1f8-4514-9f99-06ab262378b5",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+             "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "74708706",
+            "USUARIO": "74708706",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+             "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+    
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-53443235-4489-412f-9848-b4a47b4e5d43",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+    
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "25831735",
+            "USUARIO": "25831735",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+     
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+            
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-e3e675c4-07f6-480d-abd2-6b10356612ef",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+     
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "46210290",
+            "USUARIO": "46210290",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+   
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+           
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-6107ed6d-9115-474d-9e32-94bf0501f084",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+     
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "29600462",
+            "USUARIO": "29600462",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+        
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }, {
+        
+            "FREGISTRO": "2020-05-09T21:18:52.000Z",
+            "PERSONA_ID": "PE-2462e757-7877-439a-83c0-dac94d1bdc33",
+            "COMPANIA_ID": "CO-2c6c0070fe567e1f17000d02b4f5116d",
+          
+            "CARGO_CIA_ID": "CGeaf2dbae-2bec-49bc-a379-d01cca444096",
+            "PASSWORD": "40916064",
+            "USUARIO": "40916064",
+            "CREATEDATE": "2020-05-09T21:18:52.000Z",
+       
+            "TENANTID": "TE-df71979f-feac-4950-b45a-a4953a3f5758"
+        }
+    ]
+}

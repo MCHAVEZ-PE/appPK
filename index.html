@@ -4,37 +4,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APP</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- ADD ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/estilos.css">
+  <!-- ADD ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 
 <body id="body">
+  <!-- spinner for load -->
+  <div style="display: none;" id="bg-spinner">
+    <div class="opaco"></div>
+    <div class="spinnerimg">
+      <img width="200px" src="./resources/spinner.jpeg" />
+    </div>
+  </div>
+  <!-- img anuncio -->
+  <div id="capaAnuncio" class="capaAnuncio">
+    <div class="opaco-Anuncio"></div>
+    <div class="boxbtnCerrar">
+      <button class="btn btncerrar" onclick="cerrarAnuncio();">X</button>
+    </div>
+    <div class="boxImagen">
+      <img id="imagenAnuncioPrincipal" />
+    </div>
+  </div>
+  <!-- video promocional -->
 
-  <!-- navegacion -->
-  <!-- <div class="container"> -->
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <!-- cambiamos por el codigo -->
-      <a class="navbar-brand" href="/index.html">PERUCAMBIO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <div id="boxVideoPromocional" class="capaAnuncio" style="display: none;">
+    <div class="opaco-Anuncio"></div>
+    <div class="boxbtnCerrar">
+      <button class="btn btncerrar" onclick="cerrarAnuncio();">X</button>
+    </div>
+    <div id="iframeVideo">
+      <iframe style="z-index: 100;" width="569" height="315" src="https://www.youtube.com/embed/z4Yba88SG6o"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <nav id="navmenu" class="navbar fixed-top navbar-expand-lg ">
+    <div class="container ">
+      <!-- cambiamos por el codigo -->
+      <a class="navbar-brand" href="/index.html"><img width="60px" src="./resources/logo_transparente.png" /> </a>
+      <button id="btnburger" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="/Blog.html">Blog</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">Promociones</a>
+            <a class="nav-link" href="/Promociones.html">Promociones</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/Ayuda.html">Ayuda</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -44,98 +75,109 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">+51912345678</a>
               <a class="dropdown-item" href="#">+51912345678</a>
-              <a class="dropdown-item" href="#">admin@perucambio.pe</a>
+              <a class="dropdown-item" href="#">info@perucambio.com</a>
             </div>
           </li>
+
           <li class="nav-item dropdown ">
-            <a href="./vistas/Login.html" class="btn btn-secondary my-2 my-sm-0" >Iniciar Sesión</a>
+            <a href="./vistas/Login.html" id="btnlogin" class="btn btn-secondary my-2 my-sm-0">Iniciar
+              Sesión</a>
           </li>
         </ul>
       </div>
-    </nav>
-    <!-- </div> -->
+    </div>
+  </nav>
+
 
   <header class="main-header saltarmenu">
     <!-- <div class="mensaje">
             <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
         </div> -->
-        <div class=" background-overlay ">
-          <div class="container">
+
+    <div class=" background-overlay ">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 justify-content-center align-self-center ">
-            <p style="font-size: 45px; color:white; font-weight: bolder;">
-              Cambia tu dinero de una forma segura
-            </p>
-            <div>
-              <button type="button" class="btn btn-primary">¿Como funciona?</button>
-              <button type="button" class="btn btn-success">Crear Cuenta</button>
-            </div>
-          </div>
-         <div class="col-md-6">
+          <div class="col-md-6">
             <div class="boxTipoCambio justify-content-center d-flex ">
-              <span class="textTipoCambio fonttext"> Tipo de Cambio</span>
-              <span class="dataTipoCambio fonttext"> Compra: 3.390 || Venta: 3,430 </span>
+              <span class="textTipoCambio fonttext">Tipo de Cambio</span>
+              <span id="apiUSD" class="dataTipoCambio fonttext"></span>
             </div>
 
-            <form class="formchangecoin">
-              <button class="btn-change" ><i class="fa fa-refresh fa-2x" aria-hidden="true"></i></button>
+            <div class="formchangecoin">
+              <button id="changemoney" class="btn-change">
+                <i class="fa fa-refresh fa-2x" aria-hidden="true"></i></button>
               <div class="form-group">
                 <label class="labelSoles" for="">SOLES</label>
-                <input type="number" class="form-control" id="">
+                <input type="number" id="monedasoles" placeholder="YO ENVIO" class="form-control">
               </div>
               <div class="form-group">
                 <label class="labelDolares" for="">DOLARES</label>
-                <input type="number" class="form-control" id="">
+                <input type="number" id="monedadolares" placeholder="YO RECIBO" class="form-control" id="">
               </div>
               <div class="form-group">
-                <button type="button" class="btn btn-success">INICIAR OPERACION</button>
+                <a href="./vistas/Login.html" type="button" class="btn btn-intranet btn-danger">INICIAR OPERACION</a>
               </div>
-            </form>
+            </div>
 
-          </div>  
+          </div>
+          <div class="col-md-6 justify-content-center align-self-center ">
+            <h2 id="textoInicio">
+              Cambia tu dinero de una forma segura.
+              <!-- Cambia tu dinero de una forma segura.<span></span> -->
+            </h2>
+            <div>
+              <button id="irIntranet" type="button" style="background:#1da1f2 ;
+              border: 1px solid #1da1f2;
+              color: #fff;" class="btn btn-primary">¿Como funciona?</button>
+              <!-- <button type="button" class="btn btn-success">Crear Cuenta</button> -->
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </header>
+
   <!-- bancos disponibles -->
   <section class="container">
     <div class="row d-flex align-items-center justify-content-around sectionInfo">
 
       <!-- <div> -->
-        <p class="text-center" >Operaciones de cambio <br/> inmediatas através de :</p>
-        <img src="https://tkambio.com/wp-content/uploads/2019/09/4123.png" width="120px" height="100px"/>
-        <p class="text-center">A nivel nacional de <br /> Lunes a Domingo</p>
-        <img src="https://tkambio.com/wp-content/uploads/2019/09/23452.png"  width="120px" height="100px"/>
-        <p class="text-center">A nivel nacional de <br /> Lunes a Sábado</p>
-      </div>
-     
+      <p class="text-center">Operaciones de cambio <br /> inmediatas através de :</p>
+      <img src="./resources/bcp.jpeg" />
+      <p class="text-center">A nivel nacional de <br /> Lunes a Domingo</p>
+      <img src="./resources/interbanl.jpeg" />
+      <p class="text-center">A nivel nacional de <br /> Lunes a Sábado</p>
+    </div>
+
     <!-- </div> -->
     <div class="row justify-content-center m-3">
       <h3 class="text-center">Operaciones interbancarias a todos los bancos de Lima</h3>
     </div>
   </section>
   <!-- <div class="row"> -->
-    <img  class="imggif" src="./resources/gif_anuncio.gif"  />
+  <img class="imggif" src="./resources/gif_anuncio.gif" />
   <!-- </div> -->
-  
-  <div class="container">
-      <hr style="height:40px; width: 80%; border-color: black;"/>
 
-      <hr style="height:30px; width: 80%; border-color: #747477d5;"/> 
+  <div class="container">
+    <hr style="height:40px; width: 80%; border-color: black;" />
+
+    <hr style="height:30px; width: 80%; border-color: #747477d5;" />
   </div>
-<!-- img of step the register -->
-  <div class="container"> 
+  <!-- img of step the register -->
+  <div class="container">
     <div class="row justify-content-center">
-        <p >¡Compra tus Dólares en <span class="font-weight-bold"> 4 pasos!</span></p>
+      <p>¡Compra tus Dólares en <span class="font-weight-bold"> 4 pasos!</span></p>
     </div>
-    <div class="row  info-register flex-nowrap justify-content-around  align-self-center"> 
-      <div class="d-flex flex-column align-items-center" >
+    <div class="row  info-register flex-nowrap justify-content-around  align-self-center">
+      <div class="d-flex flex-column align-items-center">
         <img src="./resources/paso1.png" width="260px" alt="paso uno">
-        <p class="text-center"><strong >Registrar</strong> los datos necesarios en PERUCAMBIO</p>
+        <p class="text-center"><strong>Registrar</strong> los datos necesarios en PERUCAMBIO</p>
       </div>
       <div class="d-flex flex-column align-items-center">
         <img src="./resources/paso2.png" width="260px" alt="paso dos">
-        <p class="text-center">Cotizar tipo de cambio y  realizar una <strong class="font-weight-bold">operación</strong></p>
+        <p class="text-center">Cotizar tipo de cambio y realizar una <strong class="font-weight-bold">operación</strong>
+        </p>
       </div>
       <div class="d-flex flex-column align-items-center">
         <img src="./resources/paso3.png" width="260px" alt="paso tres">
@@ -143,36 +185,37 @@
       </div>
       <div class="d-flex flex-column align-items-center">
         <img src="./resources/paso4.png" width="260px" alt="paso cuatro">
-        <p class="text-center ">Recibe el dinero <strong class="font-weight-bold">dinero</strong> en tu cuenta bancaria</p>
+        <p class="text-center ">Recibe el dinero <strong class="font-weight-bold">dinero</strong> en tu cuenta bancaria
+        </p>
       </div>
     </div>
 
   </div>
-  
+
   <div class="container">
     <div class="row justify-content-center">
       <p class="h2 text-center">Nuestra Trayectoria</p>
     </div>
     <div class=" row justify-content-center">
-      <div class="b-trayectory d-flex flex-column align-items-center"> 
-        <img src="./resources/USUARIOS-AZUL.png"/>
+      <div class="b-trayectory d-flex flex-column align-items-center">
+        <img src="./resources/USUARIOS-AZUL.png" />
         <p class="numbers">+1000</p>
         <p>Usuarios Registrados</p>
       </div>
       <div class="b-trayectory d-flex flex-column align-items-center ">
-        <img src="./resources/OPERACIONES-AZUL.png"/>
+        <img src="./resources/OPERACIONES-AZUL.png" />
         <p class="numbers">+1000</p>
         <p>Operaciones</p>
       </div>
       <div class="b-trayectory d-flex flex-column align-items-center ">
-          <img src="./resources/SOLES-NEGOCIADOS-AZUL.png"/>
-          <p class="numbers">+1000</p>
-          <p>Soles Cambiados</p>
-          </div>  
+        <img src="./resources/SOLES-NEGOCIADOS-AZUL.png" />
+        <p class="numbers">+1000</p>
+        <p>Soles Cambiados</p>
+      </div>
     </div>
   </div>
 
-  <div class="container datahistory" >
+  <!-- <div class="container datahistory" >
     <div class="row">
 
       <div class="col-md-6 justify-content-center">
@@ -188,7 +231,7 @@
           <img src="" alt="">
         </div>
       </div>
-  </div>
+  </div> -->
 
   <div class="container">
     <!-- <div class="row justify-content-center">
@@ -196,15 +239,15 @@
     </div> -->
   </div>
   <!-- video referencial -->
-  <div>   
+  <div>
     <p class="h3 marginVideoText ">COMPRAR Y VENDER DÓLARES NUNCA FUE TAN FÁCIL</p>
-    <iframe width="98%" style="margin: auto;" height="500vh" src="https://www.youtube.com/embed/CFEGZYDhO7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-<!-- init operation -->
+    <!-- <iframe width="98%" style="margin: auto;" height="500vh" src="https://www.youtube.com/embed/CFEGZYDhO7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+  <!-- init operation -->
   <div class="container initOperation">
     <div class="row d-flex justify-content-center">
       <div class="col-5">
-        <img class="ilustration" src="./resources/ILUSTRACIÓN.png" >
+        <img class="ilustration" src="/resources/ILUSTRACIÓN.png">
       </div>
       <div class="col-7 d-flex flex-column justify-content-center align-items-end">
         <p class=" texth2 ">¿Convencido? Se parte de la familia PERUCAMBIO</p>
@@ -212,7 +255,7 @@
         <p class=" texth4 ">DESDE TU CASA U OFICINA</p>
         <p class=" texth4 ">SIN COMISIONES</p>
         <p class=" texth4 ">MAYOR SEGURIDAD</p>
-        <button class="btn offset-md-3 btninitOperation " >INICIAR OPERACION</button>
+        <button class="btn offset-md-3 btninitOperation ">INICIAR OPERACION</button>
       </div>
     </div>
   </div>
@@ -223,145 +266,107 @@
     </div>
   </div>
    -->
-  <div class="container sendEmail">
-    <div class="row d-flex justify-content-center" >
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <p class="text-right" >No pierdas la oportunidad, suscríbete y recibe todo acerca del tipo de cambio</p>
-        <p  class="text-right">Entérate de todas las novedades del tipo de cambio en el Perú y no te pierdas 
-          una buena oportunidad de compra-venta de dólares y soles online, estés donde estés.</p>
-      </div>
-      <div  class="col-md-6 d-flex align-items-center">
-        <input type="email" class="form-control input-subscription" placeholder="suscribete con tú correo">
-      </input>
-      <button class="btn-subscription fa fa-envelope icon"></button>
-      </div>
-    </div>
-  </div>
-  <!-- footer -->
-  
-<footer class="page-footer font-small mdb-color pt-4">
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
 
-    <!-- Footer links -->
-    <div class="row text-center text-md-left mt-3 pb-3">
+  <footer class="page-footer font-small mdb-color pt-4">
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">PERUCAMBIO</h6>
-        <ul  class="list-unstyled">
-          <li><a href="">NOSOTROS</a></li>
-          <li><a href="">EMPRESA</a></li>
-          <li><a href="">BLOG</a></li>
-        </ul>
-      </div>
-      <!-- Grid column -->
 
-      <hr class="w-100 clearfix d-md-none">
+    <div class="container text-center text-md-left">
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">AYUDA</h6>
-        <ul  class="list-unstyled">
-          <li><a href="">AYUDA AL CLIENTE</a></li>
-          <li><a href="">PREGUNTAS FRECUENTES</a></li>
-        </ul>
-      </div>
-      <!-- Grid column -->
+      <div class="row text-center text-md-left mt-3 pb-3">
 
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">MAS INFORMACION</h6>
-        <ul  class="list-unstyled">
-          <li><a href="">PROMOCIONES</a></li>
-          <li><a href="">CONFIGURAR ALERTAS</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">LEGAL</h6>
-        <ul  class="list-unstyled">
-          <li><a href="">TERMINOS Y CONDICIONES</a></li>
-          <li><a href="">POLITICA DE PRIVACIDAD</a></li>
-          <li><a href="">LIBRO DE RECLAMACIONES</a></li>
-        </ul>
-      </div>
-
-      <!-- Grid column -->
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">CONTACTANOS</h6>
-        <p>
-          <i class="fa fa-home mr-3"></i>L-V: 9:00 AM - 7:00 PM</p>
-        <p>
-          <i class="fa fa-home mr-3"></i>S-D: 11:00 PM - 2:00 PM</p>
-        <p>
-          <i class="fa fa-envelope mr-3"></i>mail: perucambio@gmail.com</p>
-        <p>
-          <i class="fa fa-phone mr-3"></i> +912345678</p>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Footer links -->
-
-    <hr>
-
-    <!-- Grid row -->
-    <div class="row d-flex align-items-center">
-
-      <!-- Grid column -->
-      <div class="col-md-7 col-lg-8">
-
-        <!--Copyright-->
-        <p class="text-center text-md-left">© 2020 Copyright:
-          <a href="/">
-            <strong>dev</strong>
-          </a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-
-        <!-- Social buttons -->
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
+        <div class="col-md-2 col-lg-3  col-sm-4 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 text-white font-weight-bold">PERUCAMBIO</h6>
+          <ul class="list-unstyled">
+            <li><a style="color:#fff" href="">NOSOTROS</a></li>
+            <li><a style="color:#fff" href="">EMPRESA</a></li>
+            <li><a style="color:#fff" href="">BLOG</a></li>
           </ul>
         </div>
 
+        <div class="col-md-2 col-lg-2 col-sm-4 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 text-white font-weight-bold">AYUDA</h6>
+          <ul class="list-unstyled">
+            <li><a style="color:#fff" href="">AYUDA AL CLIENTE</a></li>
+            <li><a style="color:#fff" href="">PREGUNTAS FRECUENTES</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 col-sm-4 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4  text-white font-weight-bold">MAS INFORMACION</h6>
+          <ul class="list-unstyled">
+            <li><a style="color:#fff" href="">PROMOCIONES</a></li>
+            <li><a style="color:#fff" href="">CONFIGURAR ALERTAS</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto col-sm-6  mt-3">
+          <h6 class="text-uppercase mb-4 text-white font-weight-bold">LEGAL</h6>
+          <ul class="list-unstyled">
+            <li><a style="color:#fff" href="">TERMINOS Y CONDICIONES</a></li>
+            <li><a style="color:#fff" href="">POLITICA DE PRIVACIDAD</a></li>
+            <li><a style="color:#fff" href="">LIBRO DE RECLAMACIONES</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-2 col-lg-2 col-sm-6 col-xl-3 mx-auto mt-3">
+          <h6 style="color:#fff" class="text-uppercase mb-4 font-weight-bold">CONTACTANOS</h6>
+          <p style="color:#fff">
+            <i class="fa fa-home mr-3"></i>L-V: 9:00 AM - 7:00 PM</p>
+          <p style="color:#fff">
+            <i class="fa fa-home mr-3"></i>S-D: 11:00 PM - 2:00 PM</p>
+          <p style="color:#fff">
+            <i class="fa fa-envelope mr-3"></i>mail: perucambio@gmail.com</p>
+          <p style="color:#fff">
+            <i class="fa fa-phone mr-3"></i> +912345678</p>
+        </div>
+
       </div>
-      <!-- Grid column -->
+
+      <div class="row d-flex align-items-center">
+
+        <div class="col-md-7 col-lg-8">
+
+
+          <p style="color:#fff" class="text-center text-md-left">© 2020 Copyright:
+            <a href="/">
+              <strong>dev</strong>
+            </a>
+          </p>
+
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
 
     </div>
-    <!-- Grid row -->
 
-  </div>
-  <!-- Footer Links -->
+  </footer>
 
-</footer>
-<!-- Footer -->
 
 
 
@@ -374,6 +379,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="./js/consultas.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5ecee4338ee2956d73a53f41/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <!--Start of Tawk.to Script-->
+
 </body>
 
 </html>

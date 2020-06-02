@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,40 +15,54 @@
 </head>
 
 <body>
+    <div id="bg-spinner">
+        <div class="opaco"></div>
+        <div class="spinnerimg">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <!-- cambiamos por el codigo -->
-        <a class="navbar-brand" href="./index.html">PERUCAMBIO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Promociones</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contáctanos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">+51912345678</a>
-                        <a class="dropdown-item" href="#">+51912345678</a>
-                        <a class="dropdown-item" href="#">admin@perucambio.pe</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a href="./Login.html" class="btn btn-secondary my-2 my-sm-0">Iniciar Sesión</a>
-                </li>
-            </ul>
+            <img width="200px"
+                src="../resources/spinner.jpeg" />
+        </div>
+    </div>
+    <nav id="navmenu" class="navbar fixed-top navbar-expand-lg ">
+        <div class="container ">
+            <!-- cambiamos por el codigo -->
+            <a class="navbar-brand" href="/index.html"><img width="60px" src="../resources/logo_transparente.png" /> </a>
+            <button id="btnburger" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/Promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/Ayuda.html">Ayuda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contáctanos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">+51912345678</a>
+                            <a class="dropdown-item" href="#">+51912345678</a>
+                            <a class="dropdown-item" href="#">admin@perucambio.pe</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="../vistas/Login.html" id="btnlogin" class="btn btn-secondary my-2 my-sm-0">Iniciar
+                            Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -62,152 +76,107 @@
                 <form>
                     <div class="container  d--flex justify-content-start">
                         <div class="form-group typePerson">
-                            <input type="radio" name="typePerson"></input>
+                            <input type="radio" name="typePerson" checked="true" onclick="btnchangeRadio(this)"
+                                value="PersonaNatural"></input>
                             <label for="PersonaNatural" class="form-check-label" for="exampleRadios1">
                                 Personal natural
                             </label>
                         </div>
                         <div class="form-group typePerson">
-                            <input type="radio" name="typePerson"></input>
+                            <input type="radio" name="typePerson" onclick="btnchangeRadio(this)"
+                                value="Extranjero"></input>
                             <label for="Extranjero" class="form-check-label" for="exampleRadios1">
                                 Extranjero
                             </label>
                         </div>
                         <div class="form-group typePerson">
-                            <input type="radio" name="typePerson"></input>
+                            <input type="radio" name="typePerson" onclick="btnchangeRadio(this)"
+                                value="PersonaJuridica"></input>
                             <label for="PersonaJuridica" class="form-check-label" for="exampleRadios1">
                                 Persona Juridica
                             </label>
-                            
+
                         </div>
                     </div>
-                    <div class="container  alert alert-primary" style="display: none;"  role="alert">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum commodi perspiciatis aliquid. Earum voluptas officiis, repudiandae magni consequatur fugiat, esse hic enim nihil eos explicabo. Aliquam repellat dicta dolorem magnam!  
+                    <div class="container  alert alert-primary" style="display: none;" role="alert">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum commodi perspiciatis
+                        aliquid. Earum voluptas officiis, repudiandae magni consequatur fugiat, esse hic enim nihil eos
+                        explicabo. Aliquam repellat dicta dolorem magnam!
                     </div>
                     <div class="container">
                         <!-- dinamico -->
-                        <p>Datos de persona natural</p>
+                        <p id="textPersonaNat">Datos de Persona Natural</p>
+                        <p id="textRepresentanteLeg" style="display: none;">Datos del Representante Legal</p>
+                        <P id="textPersonaExt" style="display: none;">Datos de persona extranjera</P>
                     </div>
-                    <!-- <div id="DatosPersonales" class="container">
+                    <div id="DatosPersonales" class=" container">
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Nro DNI</label>
-                            <input class="form-control" />
-                            <span></span>
-                        </div>
-
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Nombres</label>
-                            <input class="form-control" disabled="false" />
-                        </div>
-
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Apellido Paterno</label>
-                            <input class="form-control" disabled="false" />
-                        </div>
-
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Apellido Materno</label>
-                            <input class="form-control" disabled="false" />
-                        </div>
-
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">correo electronico</label>
-                            <input class="form-control" />
-                        </div>
-
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">celular</label>
-                            <select class="form-control col-sm-2 align-self-center" name="" id="">
-                                <option>PERU</option>
-                            </select>
-                            <input class="form-control" />
-                        </div>
-
-
-                        <div class="form-group">
-                            <label class="col-sm-2 align-self-center">Imagen DNI(frontal)</label>
-                            <input type="file" />
-
-                            <p class="textfileUpload">Formatos permitidos (jpeg, jpg, png, pdf)
-                                Peso Max. (3 MB)</p>
-                        </div>
-                        <div class="row ">
-                        </div>
-                    </div> -->
-                    
-                    <div id="Extranjero"  class="container">
-
-                        <div class="form-group d--flex">
+                        <div id="tipodoc" class="form-group d--flex" style="display: none;">
                             <label class="col-sm-2 align-self-center">Tipo de Documento</label>
-                            <select class="form-control">
-                                <option>Carnet de Extranjeria</option>
-                                <option>Pasaporte</option>
-                                <option>PTP</option>
-                                <option>CED. DIPLOMATICA DE INDENTIDAD</option>
+                            <select id="tipoDoc" class="form-control">
+                                <option value="CARNETEXTRANJERO">Carnet de Extranjeria</option>
+                                <option value="PASAPORTE">Pasaporte</option>
+                                <option value="PTP">PTP</option>
+                                <option value="CEDUIDENT">CED. DIPLOMATICA DE INDENTIDAD</option>
                             </select>
                             <span></span>
                         </div>
 
-
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Numero de Doc</label>
-                            <input class="form-control"  placeholder="CE" />
-                        </div>
-                        
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Nombres</label>
-                            <input class="form-control"  />
+                        <div class="form-group  mb-2">
+                            <label class=" align-self-center">Nro Documento</label>
+                            <input id="nrdoc" maxlength="11" required class="form-control" />
                         </div>
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Apellido Paterno</label>
-                            <input class="form-control" disabled="false" />
+                        <!-- <div class="container"> -->
+                        <div class="row">
+                            <div class="col-md-6 offset-md-2">
+                                <span id="textoverificacion" style="display: none;">Verificando datos ...</span>
+                            </div>
                         </div>
+                        <!-- </div> -->
 
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Apellido Materno</label>
-                            <input class="form-control" disabled="false" />
+                        <div class="form-group ">
+                            <label class=" align-self-center">Nombres</label>
+                            <input id="nombres" maxlength="30" required class="form-control" />
                         </div>
 
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">correo electronico</label>
-                            <input class="form-control" />
+                        <div class="form-group ">
+                            <label class=" align-self-center">Apellido Paterno</label>
+                            <input id="apPat" maxlength="30" required class="form-control" />
                         </div>
 
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">celular</label>
-                            <select class="form-control col-sm-2 align-self-center" name="" id="">
-                                <option>PERU</option>
-                            </select>
-                            <input class="form-control" />
-                        </div>
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">Telefono</label>
-                            <input class="form-control" />
+                        <div class="form-group ">
+                            <label class=" align-self-center">Apellido Materno</label>
+                            <input id="apMat" maxlength="30" required class="form-control" />
                         </div>
 
 
                         <div class="form-group">
-                            <label class="col-sm-2 align-self-center">Imagen DNI(frontal)</label>
-                            <input type="file" />
+                            <label class=" align-self-center">correo electronico</label>
+                            <input id="email" maxlength="40" type="email" class="form-control" required />
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class=" align-self-center">celular</label>
+                            <!-- <input type="number" class="form-control" value="+51" disabled="enabled" /> -->
+                            <input required maxlength="9" type="text" id="telefono" class="form-control" />
+                        </div>
+
+
+                        <div class="form-group d-block">
+                            <label style="word-break:break-all ;" class="  align-self-center">Imagen
+                                Documento(frontal)</label>
+                            <input id="updocument" type="file" />
 
                             <p class="textfileUpload">Formatos permitidos (jpeg, jpg, png, pdf)
                                 Peso Max. (3 MB)</p>
                         </div>
-                        <div class="row ">
-                        </div>
+
                     </div>
-
-
 
                     <div class="container">
 
@@ -216,36 +185,47 @@
                         <p>Datos de usuario</p>
 
                         <!-- </div> -->
-                        <div class="form-group d--flex">
+                        <!-- <div class="form-group d--flex">
                             <label class="col-sm-2 align-self-center">USUARIO</label>
-                            <input class="form-control" disabled="false" />
-                        </div>
+                            <input required class="form-control" disabled="false" />
+                        </div> -->
 
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">CONTRASEÑA</label>
-                            <input class="form-control" />
+                        <div class="form-group ">
+                            <label class=" align-self-center">CONTRASEÑA</label>
+                            <input maxlength="40" required id="password" type="password" class="form-control" />
                         </div>
-                        <div class="form-group d--flex">
-                            <label class="col-sm-2 align-self-center">CONFIRMAR CONTRASEÑA</label>
-                            <input class="form-control" />
+                        <div class="form-group  mb-0">
+                            <label class="align-self-center">CONFIRMAR CONTRASEÑA</label>
+                            <input maxlength="40" id="validarpassword" type="password" class="form-control" required />
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col ">
+                                <span style="font-size: 10px;">Las contraseñas deben tener mas de 6 digitos Mayusculas,
+                                    minusculas y alguno signo .#$%&/()</span>
+                            </div>
                         </div>
 
                         <div class="form-group d--flex OverCheckbox align-items-center">
-                            <input type="checkbox" style="margin: 5px;" />
+                            <input required id="chkTerminos" type="checkbox" style="margin: 5px;" />
                             <label style="margin-bottom:0px">He leído los terminos y condiciones</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6  ">
+                                <span>Debes seleccionar los terminos y condiciones</span>
+                            </div>
                         </div>
 
                         <hr>
                         <div class="d--flex justify-content-start">
-                            <button class="btn btnRegistrar btn-success" >Registrarse</button>
-                            <a class="d-flex align-items-center terminos" id="terminos"
-                             data-toggle="modal" data-target="#ModalTerminosyCondiciones" href="#">Terminos
+                            <button id="registro" class="btn btnRegistrar btn-success">Registrarse</button>
+                            <a class="d-flex align-items-center terminos" id="terminos" data-toggle="modal"
+                                data-target="#ModalTerminosyCondiciones" href="#">Terminos
                                 y condiciones</a>
-                               
-                            <a class="d-flex align-items-center terminos"  href="/Login.html" >¿Ya
+
+                            <a class="d-flex align-items-center terminos" href="./Login.html">¿Ya
                                 tienes una cuenta?Ingresa aquí</a>
                         </div>
-
+                    </div>
                 </form>
             </div>
         </div>
@@ -253,261 +233,290 @@
     </div>
     </div>
 
-    <div class="modal " id="ModalTerminosyCondiciones" tabindex="-1" role="dialog" 
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal" id="ModalTerminosyCondiciones" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog  modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Terminos y Condiciones</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p class="textTerminos">
-                Por la presente TK BUSINESS ONLINE S.A.C., (en adelante, “TKambio”), con RUC 20602202373, con domicilio en Av. La Molina 3365 Int 110 - Urb. Mastil de la Laguna - La Molina, debidamente representada por el Gerente General, Sr. MIGUEL ANGEL POMA AQUINO, se compromete a brindar el servicio de cambio de divisas por medio de transacciones bancarias electrónicas a solicitud de El Cliente.
-
-El Cliente, es una persona natural o jurídica que se compromete a registrarse empleando los formatos publicados en el portal web de TKambio, en caso de ser persona natural El Cliente deberá ser mayor de 18 años; además, con su registro acepta todos los términos y condiciones establecidos en el presente contrato, bajo los siguientes términos:
-
-Características del servicio
-“TKambio” se encuentra registrado ante la Unidad de Inteligencia Financiera y cumple con las normas establecidas por Superintendencia de Banca, Seguros y AFP - en adelante SBS - para realizar las actividades económicas detalladas en el presente contrato.
-“TKambio” se compromete a proteger su privacidad, almacenando de forma encriptada sus contraseñas en los servidores de la empresa. “TKambio” no revelará los detalles de su cuenta, dirección o correo electrónico a nadie, salvo sea exigido legalmente como se detalla en nuestra Política de privacidad.
-Todo tipo de información sensible entre su navegador y “TKambio” se transfiere de forma encriptada utilizando SSL. De tal modo, deberá asegurarse que su navegador reconozca y valide el certificado de tkambio.com.
-Detalle de Transacciones
-El Cliente podrá acceder al detalle de las operaciones realizadas y otra información relacionada a su cuenta, asimismo TKambio a solicitud de la SBS entregará la información de las transacciones a las autoridades competentes.
-Cuentas duplicadas
-En caso se detecten cuentas duplicadas, “TKambio” se reserva el derecho a cerrar o fusionar las mismas, sin previo aviso al titular de la cuenta.
-Exigibilidad
-Para hacer uso de nuestros servicios, El Cliente debe tener al menos una cuenta bancaria localizada en la ciudad de Lima.
-“TKambio” podrá realizar las acciones pertinentes para verificar la autenticidad de su identidad, pudiendo solicitar información necesaria a fin de recabar la documentación correspondiente; de igual manera “TKambio” se reserva el derecho de solicitar información a las entidades del Estado y/o privadas con el objeto de verificar la información registrada al momento de abrir la cuenta sea real.
-“TKambio” se reserva el derecho de rechazar cualquier nuevo usuario o transferencia a discreción ante la posibilidad de operaciones fraudulentas y/o delictivas.
-Utilizar el servicio
-Tipo de Órdenes de Compra:
-Objetivo fijo: Órdenes de compra en la cual usuario requiere que “TKambio” le envíe cierta cantidad de divisas.
-Fuente fija: Órdenes de compra en la cual convierte un monto fijo de una moneda a otra, siendo esta última cantidad la enviada por “TKambio”.
-Enviar una Orden de Compra:
-El Cliente debe enviar órdenes de compra online utilizando su cuenta en Tkambio.com; por ello, se le pedirá que adjunte la siguiente información:
-
-Detalle de la cuenta en la cual se realizará el abono de la transacción, debiendo proporcionar tanto el número de cuenta como el número de transferencia interbancario.
-Número de DNI del titular de la cuenta.
-Monto a ser cambiado, sobre la base de su decisión entre órdenes de compra de objetivo fijo o de fuente fija.
-Una vez completada la orden de compra online, se le enviará una confirmación de recepción de la misma vía correo electrónico.
-
-Es importante que note que una orden de compra sólo será procesada y completada una vez que se haya confirmado y validado la transacción de los fondos. Es responsabilidad del usuario enviar los fondos en el tiempo adecuado para asegurar el procesamiento de la orden de compra. Nosotros no podemos influenciar los tiempos que demora el envío de los fondos por su entidad bancaria o proveedor de pagos. Sin embargo, nos encontramos monitoreando nuestras cuentas bancarias en intervalos cortos de tiempo, y le notificaremos y completaremos su orden de compra siempre y cuando lleguen antes de las 4pm de un día útil. Si los fondos llegaran luego de las 4pm de un día útil, la orden de compra será completada el siguiente día útil. Por otro lado, las órdenes de compra colocadas luego de las 6pm o durante un dia que no es día útil también se procesarán al siguiente día útil.
-
-Tiempos de ejecución para órdenes de compra:
-Todas las órdenes de compra colocadas se procesarán a partir del momento en que se reciban los fondos. Una vez recibidos los mismos, el tiempo para que el usuario reciba los fondos no será mayor a un día útil, siempre y cuando no se hayan establecido tiempos diferentes entre las partes. Es necesario recalcar que “TKambio” no controla los tiempos que puedan tomar las diferentes entidades bancarias o entidades que procesan los pagos para poder hacer que los fondos estén disponibles al titular de la cuenta.
-
-Asimismo, es importante destacar que los tiempos mencionados anteriormente se encuentran sujetos a variaciones causadas por verificaciones adicionales de seguridad que puedan ser necesarias o a la magnitud del monto requerido por el usuario. Esto podría retrasar el procesamiento y ejecución de la orden de compras.
-
-Tipo de cambio:
-El tipo de cambio al momento de la transacción será el que figure en el portal web Tkambio.com al momento de iniciar la transacción.
-
-De no ser completada la transacción dentro del plazo señalado en el párrafo precedente, se procederá a la anulación de la orden de compra. Para confirmar dicho tipo de cambio, el usuario deberá adjuntar la confirmación de dicha transacción con un comprobante de pago en nuestra web o enviar un correo a contacto@tkambio.com con el número de orden generado.
-
-Si la tasa de cambio promedio del mercado experimentará cambios mayores a 1.5% durante el tiempo en el cual se transfieren los fondos y el cual se reciben los fondos, TKambio tiene la facultad de suspender la orden de compra por un periodo de tiempo razonable o cancelar la misma y proceder a la devolución de los fondos.
-
-Depósitos:
-TKambio no procesará las órdenes de compra hasta recibir los fondos transferidos por el usuario. Una vez recibidos los fondos, el usuario recibirá una confirmación por correo electrónico, en la cual se le comunicará el procesamiento de su orden de compra.
-
-Si por alguna razón la transacción fuera denegada, “TKambio” procederá a contactar al usuario con la información disponible en la cuenta del mismo. De no proceder la transacción, “TKambio” procederá a devolver los fondos a la cuenta bancaria del usuario.
-
-Restricciones a las transacciones de transferencia de dinero:
-Nos reservamos el derecho, a nuestra entera discreción de (1) rechazar una transferencia de dinero presentada; (2) limitar el monto de la transferencia de dinero; (3) solicitar información adicional para efectuar la transferencia de dinero; o (4) tomar medidas razonables en relación con la transferencia de dinero a fin de cumplir con las leyes y reglamentaciones aplicables. El Cliente no intentará burlar los parámetros del servicio, utilizando una cuenta bancaria diferente, ingresando información falsa o por otros medios.
-
-Transferencias Bancarias:
-“TKambio” recibirá los fondos en sus cuentas a través de transferencias bancarias y, por esta misma vía, devolverá los fondos a los usuarios. “TKambio” asumirá los costos de transacción en los que incurre el usuario hasta por el monto asociado a una transferencia interbancaria, el cual estará especificado en la constancia adjunta por el usuario para el procesamiento de la orden de compra. TKambio procederá a devolver este monto al usuario como parte del abono realizado para el cumplimiento de la orden de compra, realizando el cambio de este monto a la tasa de cambio especificada en la misma.
-
-Transferencias Rechazadas:
-“TKambio” puede rechazar una orden de compra si es que no se puede validar el nombre del usuario con el nombre asociado a la cuenta que recibirá el depósito. En este caso, el usuario será responsable de asumir los cargos administrativos asociados.
-
-Cancelación de órdenes de compra:
-El usuario puede cancelar la orden de compra sin costo alguno en cualquier momento previo a la realización de la transferencia de los fondos a las cuentas de TKambio. Una vez realizado el abono, el usuario podrá realizar la cancelación de su orden de compra siempre y cuando esta aún no haya sido procesada y no se haya abonado el monto a su cuenta; de lo contrario quedará sujeto a asumir los cargos administrativos asociados.
-
-Obligaciones del Usuario:
-El usuario es responsable por asegurarse que los detalles brindados para la realización de la transacción sean precisos. Una vez que “TKambio” haya realizado la transacción, esta no puede revertirse y “TKambio” no será responsable de ninguna manera por cualquier pérdida sufrida por el usuario como consecuencia de realizar la transacción de acuerdo a las instrucciones y datos brindados por el mismo.
-
-El Cliente acuerda no usar los Servicios para cualquier actividad ilegal y TKambio se reserva el derecho de investigar cualquier actividad sospechosa o a seguir una investigación como consecuencia de reclamos o de reportes de violaciones de los términos y condiciones. Durante la investigación de dichas actividades, TKambio se reserva el derecho de reportar actividades sospechosas o ilegales a la persona o entidad apropiada y proveerles cualquier información relevante, incluyendo datos personales.
-
-Tarifas y Comisiones
-Cargos Administrativos:
-Los costos administrativos son aquellos asociados a transferencias rechazadas o a órdenes de compra canceladas luego de la transferencia inicial de los fondos a las cuentas de TKambio. En ambos casos se aplicarán cargos a los usuarios de S/.6 o de USD $2.00 en función de la moneda en la cual se realizó la transferencia inicial de fondos.
-
-Términos Generales
-Servicios de terceros:
-El Cliente reconoce y autoriza a “TKambio” a interactuar con terceros y con proveedores para proveer los servicios.
-
-El Cliente acuerda estar sujeto a cualquier acuerdo con usuarios establecido por las terceras partes con las cuales “TKambio” interactúa para proveer los servicios.
-
-Al aceptar los términos y condiciones de las terceras partes, El Cliente expresamente reconoce que “TKambio” actúa como agente del tercero y TKambio no tiene ninguna responsabilidad por las acciones u omisiones de este tercero.
-
-Comunicaciones:
-Nosotros necesitamos proveerle cierta información por escrito. Al aceptar este Acuerdo, El Cliente acuerda que “TKambio” puede comunicarse con El Cliente vía correo electrónico o publicando avisos en la página web de TKambio.
-
-Eventos fuera de nuestro control:
-Si no pudiésemos ejecutar nuestras obligaciones establecidas bajo este Acuerdo debido a factores fuera de nuestro control, incluyendo cambios legislativos o eventos de fuerza mayor, serán notificados lo antes posible, asegurando el retorno de los fondos depositados para los cuales no hayamos podido ejecutar las obligaciones establecidas por este Acuerdo.
-
-En ese sentido, no tendremos ninguna responsabilidad asociada a la incapacidad para cumplir las obligaciones establecidas por este Acuerdo bajo las circunstancias antes mencionadas.
-
-Reclamos:
-Estamos comprometidos con brindarles los estándares más altos en nuestro servicio. Si El Cliente siente que no hemos logrado eso, puede encontrar información sobre el procedimiento para presentar reclamos aquí. (soporte@tkambio.com)
-
-Acuerdo:
-Este acuerdo y cualquier documento al que se hace referencia a lo largo del mismo constituyen la totalidad del acuerdo entre “TKambio” y el usuario y está por encima de cualquier comunicación previa, discusiones o entendimientos entre las partes.
-
-Ley y Jurisdicción:
-La provisión del servicio y cualquier disputa o reclamos que podrían surgir como consecuencia del mismo se rigen por la ley peruana.
-
-Cambios en los términos
-“TKambio” tiene la facultad de, cambiar los términos y condiciones de este Acuerdo, a nuestro exclusivo criterio y/o cuando la Ley lo requiera, para lo cual se enviará un aviso del cambio realizado o una copia del acuerdo enmendado a la última dirección o dirección de correo electrónico indicada en nuestros registros; asimismo, de ser requerido por Ley, se publicará un aviso en el sitio web. Por otro lado, cuando no lo requiera la Ley o cuando sea necesario un cambio inmediato debido a cuestiones de seguridad, es posible que no enviemos el aviso previo. Al continuar utilizando los servicios luego de dicho cambio, El Cliente acepta acatar los términos y condiciones enmendados de este Acuerdo, a partir de la fecha de entrada en vigor de dichos cambios.
-              </p>          
-</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Acepto</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-    <footer class="page-footer font-small mdb-color pt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-
-            <!-- Footer links -->
-            <div class="row text-center text-md-left mt-3 pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">PERUCAMBIO</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="">NOSOTROS</a></li>
-                        <li><a href="">EMPRESA</a></li>
-                        <li><a href="">BLOG</a></li>
-                    </ul>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Terminos y Condiciones</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <!-- Grid column -->
+                <div class="modal-body ajuste-modal">
+                    <p class="textTerminos">
+                        Por la presente TK BUSINESS ONLINE S.A.C., (en adelante, “TKambio”), con RUC 20602202373, con
+                        domicilio en Av. La Molina 3365 Int 110 - Urb. Mastil de la Laguna - La Molina, debidamente
+                        representada por el Gerente General, Sr. MIGUEL ANGEL POMA AQUINO, se compromete a brindar el
+                        servicio de cambio de divisas por medio de transacciones bancarias electrónicas a solicitud de
+                        El Cliente.
 
-                <hr class="w-100 clearfix d-md-none">
+                        El Cliente, es una persona natural o jurídica que se compromete a registrarse empleando los
+                        formatos publicados en el portal web de TKambio, en caso de ser persona natural El Cliente
+                        deberá ser mayor de 18 años; además, con su registro acepta todos los términos y condiciones
+                        establecidos en el presente contrato, bajo los siguientes términos:
 
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">AYUDA</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="">AYUDA AL CLIENTE</a></li>
-                        <li><a href="">PREGUNTAS FRECUENTES</a></li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
+                        Características del servicio
+                        “TKambio” se encuentra registrado ante la Unidad de Inteligencia Financiera y cumple con las
+                        normas establecidas por Superintendencia de Banca, Seguros y AFP - en adelante SBS - para
+                        realizar las actividades económicas detalladas en el presente contrato.
+                        “TKambio” se compromete a proteger su privacidad, almacenando de forma encriptada sus
+                        contraseñas en los servidores de la empresa. “TKambio” no revelará los detalles de su cuenta,
+                        dirección o correo electrónico a nadie, salvo sea exigido legalmente como se detalla en nuestra
+                        Política de privacidad.
+                        Todo tipo de información sensible entre su navegador y “TKambio” se transfiere de forma
+                        encriptada utilizando SSL. De tal modo, deberá asegurarse que su navegador reconozca y valide el
+                        certificado de tkambio.com.
+                        Detalle de Transacciones
+                        El Cliente podrá acceder al detalle de las operaciones realizadas y otra información relacionada
+                        a su cuenta, asimismo TKambio a solicitud de la SBS entregará la información de las
+                        transacciones a las autoridades competentes.
+                        Cuentas duplicadas
+                        En caso se detecten cuentas duplicadas, “TKambio” se reserva el derecho a cerrar o fusionar las
+                        mismas, sin previo aviso al titular de la cuenta.
+                        Exigibilidad
+                        Para hacer uso de nuestros servicios, El Cliente debe tener al menos una cuenta bancaria
+                        localizada en la ciudad de Lima.
+                        “TKambio” podrá realizar las acciones pertinentes para verificar la autenticidad de su
+                        identidad, pudiendo solicitar información necesaria a fin de recabar la documentación
+                        correspondiente; de igual manera “TKambio” se reserva el derecho de solicitar información a las
+                        entidades del Estado y/o privadas con el objeto de verificar la información registrada al
+                        momento de abrir la cuenta sea real.
+                        “TKambio” se reserva el derecho de rechazar cualquier nuevo usuario o transferencia a discreción
+                        ante la posibilidad de operaciones fraudulentas y/o delictivas.
+                        Utilizar el servicio
+                        Tipo de Órdenes de Compra:
+                        Objetivo fijo: Órdenes de compra en la cual usuario requiere que “TKambio” le envíe cierta
+                        cantidad de divisas.
+                        Fuente fija: Órdenes de compra en la cual convierte un monto fijo de una moneda a otra, siendo
+                        esta última cantidad la enviada por “TKambio”.
+                        Enviar una Orden de Compra:
+                        El Cliente debe enviar órdenes de compra online utilizando su cuenta en Tkambio.com; por ello,
+                        se le pedirá que adjunte la siguiente información:
 
-                <hr class="w-100 clearfix d-md-none">
+                        Detalle de la cuenta en la cual se realizará el abono de la transacción, debiendo proporcionar
+                        tanto el número de cuenta como el número de transferencia interbancario.
+                        Número de DNI del titular de la cuenta.
+                        Monto a ser cambiado, sobre la base de su decisión entre órdenes de compra de objetivo fijo o de
+                        fuente fija.
+                        Una vez completada la orden de compra online, se le enviará una confirmación de recepción de la
+                        misma vía correo electrónico.
 
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">MAS INFORMACION</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="">PROMOCIONES</a></li>
-                        <li><a href="">CONFIGURAR ALERTAS</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">LEGAL</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="">TERMINOS Y CONDICIONES</a></li>
-                        <li><a href="">POLITICA DE PRIVACIDAD</a></li>
-                        <li><a href="">LIBRO DE RECLAMACIONES</a></li>
-                    </ul>
-                </div>
+                        Es importante que note que una orden de compra sólo será procesada y completada una vez que se
+                        haya confirmado y validado la transacción de los fondos. Es responsabilidad del usuario enviar
+                        los fondos en el tiempo adecuado para asegurar el procesamiento de la orden de compra. Nosotros
+                        no podemos influenciar los tiempos que demora el envío de los fondos por su entidad bancaria o
+                        proveedor de pagos. Sin embargo, nos encontramos monitoreando nuestras cuentas bancarias en
+                        intervalos cortos de tiempo, y le notificaremos y completaremos su orden de compra siempre y
+                        cuando lleguen antes de las 4pm de un día útil. Si los fondos llegaran luego de las 4pm de un
+                        día útil, la orden de compra será completada el siguiente día útil. Por otro lado, las órdenes
+                        de compra colocadas luego de las 6pm o durante un dia que no es día útil también se procesarán
+                        al siguiente día útil.
 
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none">
+                        Tiempos de ejecución para órdenes de compra:
+                        Todas las órdenes de compra colocadas se procesarán a partir del momento en que se reciban los
+                        fondos. Una vez recibidos los mismos, el tiempo para que el usuario reciba los fondos no será
+                        mayor a un día útil, siempre y cuando no se hayan establecido tiempos diferentes entre las
+                        partes. Es necesario recalcar que “TKambio” no controla los tiempos que puedan tomar las
+                        diferentes entidades bancarias o entidades que procesan los pagos para poder hacer que los
+                        fondos estén disponibles al titular de la cuenta.
 
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">CONTACTANOS</h6>
-                    <p>
-                        <i class="fa fa-home mr-3"></i>L-V: 9:00 AM - 7:00 PM</p>
-                    <p>
-                        <i class="fa fa-home mr-3"></i>S-D: 11:00 PM - 2:00 PM</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i>mail: perucambio@gmail.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> +912345678</p>
-                </div>
-                <!-- Grid column -->
+                        Asimismo, es importante destacar que los tiempos mencionados anteriormente se encuentran sujetos
+                        a variaciones causadas por verificaciones adicionales de seguridad que puedan ser necesarias o a
+                        la magnitud del monto requerido por el usuario. Esto podría retrasar el procesamiento y
+                        ejecución de la orden de compras.
 
-            </div>
-            <!-- Footer links -->
+                        Tipo de cambio:
+                        El tipo de cambio al momento de la transacción será el que figure en el portal web Tkambio.com
+                        al momento de iniciar la transacción.
 
-            <hr>
+                        De no ser completada la transacción dentro del plazo señalado en el párrafo precedente, se
+                        procederá a la anulación de la orden de compra. Para confirmar dicho tipo de cambio, el usuario
+                        deberá adjuntar la confirmación de dicha transacción con un comprobante de pago en nuestra web o
+                        enviar un correo a contacto@tkambio.com con el número de orden generado.
 
-            <!-- Grid row -->
-            <div class="row d-flex align-items-center">
+                        Si la tasa de cambio promedio del mercado experimentará cambios mayores a 1.5% durante el tiempo
+                        en el cual se transfieren los fondos y el cual se reciben los fondos, TKambio tiene la facultad
+                        de suspender la orden de compra por un periodo de tiempo razonable o cancelar la misma y
+                        proceder a la devolución de los fondos.
 
-                <!-- Grid column -->
-                <div class="col-md-7 col-lg-8">
+                        Depósitos:
+                        TKambio no procesará las órdenes de compra hasta recibir los fondos transferidos por el usuario.
+                        Una vez recibidos los fondos, el usuario recibirá una confirmación por correo electrónico, en la
+                        cual se le comunicará el procesamiento de su orden de compra.
 
-                    <!--Copyright-->
-                    <p class="text-center text-md-left">© 2020 Copyright:
-                        <a href="/">
-                            <strong>dev</strong>
-                        </a>
+                        Si por alguna razón la transacción fuera denegada, “TKambio” procederá a contactar al usuario
+                        con la información disponible en la cuenta del mismo. De no proceder la transacción, “TKambio”
+                        procederá a devolver los fondos a la cuenta bancaria del usuario.
+
+                        Restricciones a las transacciones de transferencia de dinero:
+                        Nos reservamos el derecho, a nuestra entera discreción de (1) rechazar una transferencia de
+                        dinero presentada; (2) limitar el monto de la transferencia de dinero; (3) solicitar información
+                        adicional para efectuar la transferencia de dinero; o (4) tomar medidas razonables en relación
+                        con la transferencia de dinero a fin de cumplir con las leyes y reglamentaciones aplicables. El
+                        Cliente no intentará burlar los parámetros del servicio, utilizando una cuenta bancaria
+                        diferente, ingresando información falsa o por otros medios.
+
+                        Transferencias Bancarias:
+                        “TKambio” recibirá los fondos en sus cuentas a través de transferencias bancarias y, por esta
+                        misma vía, devolverá los fondos a los usuarios. “TKambio” asumirá los costos de transacción en
+                        los que incurre el usuario hasta por el monto asociado a una transferencia interbancaria, el
+                        cual estará especificado en la constancia adjunta por el usuario para el procesamiento de la
+                        orden de compra. TKambio procederá a devolver este monto al usuario como parte del abono
+                        realizado para el cumplimiento de la orden de compra, realizando el cambio de este monto a la
+                        tasa de cambio especificada en la misma.
+
+                        Transferencias Rechazadas:
+                        “TKambio” puede rechazar una orden de compra si es que no se puede validar el nombre del usuario
+                        con el nombre asociado a la cuenta que recibirá el depósito. En este caso, el usuario será
+                        responsable de asumir los cargos administrativos asociados.
+
+                        Cancelación de órdenes de compra:
+                        El usuario puede cancelar la orden de compra sin costo alguno en cualquier momento previo a la
+                        realización de la transferencia de los fondos a las cuentas de TKambio. Una vez realizado el
+                        abono, el usuario podrá realizar la cancelación de su orden de compra siempre y cuando esta aún
+                        no haya sido procesada y no se haya abonado el monto a su cuenta; de lo contrario quedará sujeto
+                        a asumir los cargos administrativos asociados.
+
+                        Obligaciones del Usuario:
+                        El usuario es responsable por asegurarse que los detalles brindados para la realización de la
+                        transacción sean precisos. Una vez que “TKambio” haya realizado la transacción, esta no puede
+                        revertirse y “TKambio” no será responsable de ninguna manera por cualquier pérdida sufrida por
+                        el usuario como consecuencia de realizar la transacción de acuerdo a las instrucciones y datos
+                        brindados por el mismo.
+
+                        El Cliente acuerda no usar los Servicios para cualquier actividad ilegal y TKambio se reserva el
+                        derecho de investigar cualquier actividad sospechosa o a seguir una investigación como
+                        consecuencia de reclamos o de reportes de violaciones de los términos y condiciones. Durante la
+                        investigación de dichas actividades, TKambio se reserva el derecho de reportar actividades
+                        sospechosas o ilegales a la persona o entidad apropiada y proveerles cualquier información
+                        relevante, incluyendo datos personales.
+
+                        Tarifas y Comisiones
+                        Cargos Administrativos:
+                        Los costos administrativos son aquellos asociados a transferencias rechazadas o a órdenes de
+                        compra canceladas luego de la transferencia inicial de los fondos a las cuentas de TKambio. En
+                        ambos casos se aplicarán cargos a los usuarios de S/.6 o de USD $2.00 en función de la moneda en
+                        la cual se realizó la transferencia inicial de fondos.
+
+                        Términos Generales
+                        Servicios de terceros:
+                        El Cliente reconoce y autoriza a “TKambio” a interactuar con terceros y con proveedores para
+                        proveer los servicios.
+
+                        El Cliente acuerda estar sujeto a cualquier acuerdo con usuarios establecido por las terceras
+                        partes con las cuales “TKambio” interactúa para proveer los servicios.
+
+                        Al aceptar los términos y condiciones de las terceras partes, El Cliente expresamente reconoce
+                        que “TKambio” actúa como agente del tercero y TKambio no tiene ninguna responsabilidad por las
+                        acciones u omisiones de este tercero.
+
+                        Comunicaciones:
+                        Nosotros necesitamos proveerle cierta información por escrito. Al aceptar este Acuerdo, El
+                        Cliente acuerda que “TKambio” puede comunicarse con El Cliente vía correo electrónico o
+                        publicando avisos en la página web de TKambio.
+
+                        Eventos fuera de nuestro control:
+                        Si no pudiésemos ejecutar nuestras obligaciones establecidas bajo este Acuerdo debido a factores
+                        fuera de nuestro control, incluyendo cambios legislativos o eventos de fuerza mayor, serán
+                        notificados lo antes posible, asegurando el retorno de los fondos depositados para los cuales no
+                        hayamos podido ejecutar las obligaciones establecidas por este Acuerdo.
+
+                        En ese sentido, no tendremos ninguna responsabilidad asociada a la incapacidad para cumplir las
+                        obligaciones establecidas por este Acuerdo bajo las circunstancias antes mencionadas.
+
+                        Reclamos:
+                        Estamos comprometidos con brindarles los estándares más altos en nuestro servicio. Si El Cliente
+                        siente que no hemos logrado eso, puede encontrar información sobre el procedimiento para
+                        presentar reclamos aquí. (soporte@tkambio.com)
+
+                        Acuerdo:
+                        Este acuerdo y cualquier documento al que se hace referencia a lo largo del mismo constituyen la
+                        totalidad del acuerdo entre “TKambio” y el usuario y está por encima de cualquier comunicación
+                        previa, discusiones o entendimientos entre las partes.
+
+                        Ley y Jurisdicción:
+                        La provisión del servicio y cualquier disputa o reclamos que podrían surgir como consecuencia
+                        del mismo se rigen por la ley peruana.
+
+                        Cambios en los términos
+                        “TKambio” tiene la facultad de, cambiar los términos y condiciones de este Acuerdo, a nuestro
+                        exclusivo criterio y/o cuando la Ley lo requiera, para lo cual se enviará un aviso del cambio
+                        realizado o una copia del acuerdo enmendado a la última dirección o dirección de correo
+                        electrónico indicada en nuestros registros; asimismo, de ser requerido por Ley, se publicará un
+                        aviso en el sitio web. Por otro lado, cuando no lo requiera la Ley o cuando sea necesario un
+                        cambio inmediato debido a cuestiones de seguridad, es posible que no enviemos el aviso previo.
+                        Al continuar utilizando los servicios luego de dicho cambio, El Cliente acepta acatar los
+                        términos y condiciones enmendados de este Acuerdo, a partir de la fecha de entrada en vigor de
+                        dichos cambios.
                     </p>
-
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                    <!-- Social buttons -->
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Acepto</button>
                 </div>
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
-
         </div>
-        <!-- Footer Links -->
+    </div>
 
-    </footer>
+    <div class="modal" id="ModalTerminosyCondiciones" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Terminos y Condiciones</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ajuste-modal">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div class="form-control">
+                        <label>Ingrese el codigo que enviamos a </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Acepto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script>
-                $('#ModalTerminosyCondiciones').on('shown.bs.modal', function () {
-                $('#terminos').trigger('focus')
-                })
+        $('#ModalTerminosyCondiciones').on('shown.bs.modal', function () {
+            $('#terminos').trigger('focus')
+        })
+    </script>
+    <script src="../js/consultas.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/registro.js"></script>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ecee4338ee2956d73a53f41/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
 </body>
 
