@@ -644,7 +644,7 @@ $(document).ready(function () {
                 // debugger;
                 
                 document.getElementById("boxDolares").children[0].children[1].children[1].children[0].innerHTML = "USD"
-                document.getElementById("boxSoles").children[0].children[0].children[2].value = Number(monedadolares * moneda.Compra).toFixed(2);
+                document.getElementById("boxSoles").children[0].children[0].children[2].value = Number(monedasoles * moneda.Compra).toFixed(2);
                 document.getElementById("cambioActual").innerText = moneda.Compra;
                 document.getElementById("cambioActual").setAttribute("codigo", moneda.idCompra);
                 document.getElementById("ventaS").classList.remove('addfocus');
