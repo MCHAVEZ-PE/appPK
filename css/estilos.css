@@ -181,7 +181,7 @@ a strong {
 
 .main-header {
     background-image: url(../resources/img.jpg);
-    height: 500px;
+    height: 100vh;
     max-width: 100%;
     background-size: cover;
     background-position: center;

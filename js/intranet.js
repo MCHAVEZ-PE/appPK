@@ -461,7 +461,7 @@ $(document).ready(function () {
 
             get(URLORIGIN + "/Usuario?Id=" + code.coUsuario)
                 .then(function (response) {
-                    console.log(response);
+                    // console.log(response);
 
                     document.getElementById("nrodni").value = response.dni;
                     document.getElementById("nombres").value = response.nombre;
