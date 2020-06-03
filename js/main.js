@@ -5,6 +5,7 @@ var irIntranet = null;
 var cerrarAnuncio = null;
 var extra = null;
 var limpiarCampos = null;
+var irRegistro = null;
 // si se cargo la pagina 
 
 document.getElementById("bg-spinner").style.visibility = 'visible';
@@ -183,5 +184,8 @@ $(document).ready(function () {
             document.getElementById("correo").value = "";
 
         }
+    }
+    irRegistro = function () {
+        document.location.href = window.location.origin +"/vistas/Registro.html"    
     }
 });
