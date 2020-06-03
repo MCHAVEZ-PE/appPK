@@ -817,6 +817,7 @@ $(document).ready(function () {
                 method: 'POST',
                 body: formdata
             }
+            $("#tbodyModal").empty();
             post(URLORIGIN + "/Tarjeta", obj)
                 .then(function (response) {
                     var tbody = document.getElementById("tbodyModal");
@@ -896,10 +897,22 @@ $(document).ready(function () {
 
     document.querySelectorAll("th").forEach(function (th) {
         th.addEventListener("click", function () {
+            // tbody
             const table = th.closest("table").children[1];
-            Array.from(table.querySelectorAll('tr:nth-child(n)'))
+                console.log(th.parentNode.children)
+                // var trs = table.getElementsByTagName("tr");
+                // for (let i = 0; i < .length; i++) {
+                //     const element = array[i];
+                    
+                // }
+            
+                // get trs
+                Array.from(table.querySelectorAll('tr:nth-child(n)'))
+
                 .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
                 .forEach(tr => table.appendChild(tr));
+
+
         })
     })
 
@@ -919,8 +932,8 @@ $(document).ready(function () {
 
         for (let i = 0; i < tr.length; i++) {
             tr[i].style.display = "none";
-            td = tr[i].getElementsByTagName("td");
-            for (let j = 0; j < td.length; j++) {
+            tds = tr[i].getElementsByTagName("td");
+            for (let j = 0; j < tds.length; j++) {
                 cell = tr[i].getElementsByTagName("td")[j];
                 if (cell) {
                     // txtValue = cell.textContent || cell.innerText;
@@ -940,6 +953,7 @@ $(document).ready(function () {
                 .then(function (response) {
 
                     var tbody = document.getElementById("tbody");
+                    // $("#tbody").empty();
                     if (response.mensaje == "No hay elementos registrados") {
                         console.log(response.mensaje);
                     } else {

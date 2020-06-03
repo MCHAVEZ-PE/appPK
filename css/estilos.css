@@ -216,12 +216,14 @@ span.textTipoCambio {
 
 /* nueva operacion */
 .cmbboxcuenta {
-    width: 450px;
+    width: 520px;
     height: 45px;
     padding: 5px;
     border-radius: 10px;
 }
-
+.navbar-toggler-icon {
+    color: #fff;
+}
 .borderS {
     border: 3px solid red;
     font-weight: 500;
@@ -762,6 +764,8 @@ display: none;
 .boxMoney {
     border: 1px solid;
     border-radius: 10px 0px 0px 10px;
+    height: 70px;
+    font-size: 30px;
 }
 
 .tamanoinput1:focus,
@@ -775,10 +779,12 @@ display: none;
 }
 
 .boxTipoMoneda {
-    border: 1px solid;
-    padding: 5px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 1rem;
     width: 7rem;
-    background: linear-gradient( #46cbff, #91e0ff);
+    color: #fff;
+    background: linear-gradient(#07345B, #093D6A);
+    height: 80px;
 }
 
 /* #moendaDolares::before{ */
@@ -805,9 +811,9 @@ display: none;
     height: 60px;
     width: 60px;
     border: 2px solid #ffffff;
-    color: #7CC62A;
+    color: #fff;
     font-size: 1.3rem;
-    background: linear-gradient(#07345B, #093D6A);
+    background: linear-gradient(#7CC62A, #80CC2B);
     outline: none !important;
     transform: rotate(90deg);
     /* border-radius: 50%; */
