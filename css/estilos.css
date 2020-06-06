@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
 #imagenAnuncioPrincipal {
     width: 70%;
     height: 80%;
-    background-image: url(../resources/CONSEJOS-PARA-COMPRAR-POR-INTERNET-CON-SEGURIDAD-1024x676.jpg);
+    background-image: url(../resource/modal.jpg);
     background-position: center;
     background-size: auto;
 
@@ -216,7 +216,7 @@ span.textTipoCambio {
 
 /* nueva operacion */
 .cmbboxcuenta {
-    width: 520px;
+    width: 61%;
     height: 45px;
     padding: 5px;
     border-radius: 10px;
@@ -806,7 +806,7 @@ display: none;
 
 .btnchange {
     position: absolute;
-    left: 140px;
+    left: 115px;
     top: -35px;
     height: 60px;
     width: 60px;
@@ -843,13 +843,13 @@ input.h-input {
 }
 
 .tamanoinput1 {
-    width: 26.7rem;
+    width: 22.3rem;
     padding: 2px 5px;
     border: none;
 }
 
 .tamanoinput2 {
-    width: 26rem;
+    width: 21.6rem;
     border: none;
 }
 
@@ -1170,14 +1170,14 @@ table {
 }
 
 .cajaBtns {
-    width: 450px;
+    width: auto;
     display: flex;
     justify-content: space-between;
     margin: 0 0 0 12px;
 }
 
 .tamnoancho {
-    width: auto;
+    width: 29rem; /*47%*/
 }
 
 .cajaBuscador {

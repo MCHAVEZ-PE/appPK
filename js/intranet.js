@@ -90,7 +90,6 @@ $(document).ready(function () {
             .then(function (response) {
                 if (response.mensaje === "Confirmar") {
                     validarCodigo();
-                    // infoCliente(code);
                 }
                 if (response.mensaje === "Cuenta activada") {
                     obtenerInformacion(info.coUsuario);
@@ -172,13 +171,6 @@ $(document).ready(function () {
                 if (response.mensaje == "No hay elementos registrados") {
                     console.log(response.mensaje);
                 } else {
-
-                    // do {
-                    //     for (var i = nroCuenta.length - 1; i == 1; i--) {
-                    //         nroCuenta.remove(i);
-                    //     }
-                    // } while (nroCuenta.length == 1);
-
                     data.forEach(function (element) {
                         var option = document.createElement("option");
                         if (value == "USD") {
@@ -561,6 +553,7 @@ $(document).ready(function () {
         document.getElementById("compraS").innerHTML = moneda.Compra;
         document.getElementById("ventaS").innerHTML = moneda.Venta;
         document.getElementById("cambioActual").innerText = `${moneda.Compra}`;
+        
         document.getElementById("cambioActual").setAttribute("codigo", moneda.idCompra);
 
         getDataBancos();
@@ -899,13 +892,7 @@ $(document).ready(function () {
         th.addEventListener("click", function () {
             // tbody
             const table = th.closest("table").children[1];
-                console.log(th.parentNode.children)
-                // var trs = table.getElementsByTagName("tr");
-                // for (let i = 0; i < .length; i++) {
-                //     const element = array[i];
-                    
-                // }
-            
+                console.log(th.parentNode.children)            
                 // get trs
                 Array.from(table.querySelectorAll('tr:nth-child(n)'))
 
